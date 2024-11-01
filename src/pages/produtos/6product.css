@@ -1,0 +1,14 @@
+@media screen and (max-width: 1080px){
+    #per6{
+        max-height: 300px;
+        max-width: 310px;
+        padding-right: 10px;
+        top: -50px;
+    }
+    .price{
+        margin-bottom: -3px;
+    }
+    .data{
+        margin-top: 5px;
+      }
+}

@@ -1,0 +1,20 @@
+@media screen and (max-width: 1080px){
+    #per2{
+        height: 350px;
+        max-width: 400px;
+        padding-right: 100px;
+        margin-top: -50px;
+    }
+    .price{
+      margin-bottom: -3px;
+  }
+    .price__title{
+        margin-left: -10px;
+      }
+      #price-origin{
+        margin-left: -230px;
+      }
+      .data{
+        margin-top: 5px;
+      }
+}

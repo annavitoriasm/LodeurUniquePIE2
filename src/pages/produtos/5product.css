@@ -1,0 +1,14 @@
+@media screen and (max-width: 1080px){
+    #per5{
+        height: 320px;
+        max-width: 320px;
+        padding-right: 90px;
+        margin-top: -60px;
+    }
+    .price{
+        margin-bottom: -3px;
+    }
+    .data{
+        margin-top: -15px;
+      }
+}

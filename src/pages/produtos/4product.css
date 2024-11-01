@@ -1,0 +1,24 @@
+@media screen and (max-width: 1080px){
+    #per4{
+        height: 300px;
+        max-width: 300px;
+        padding-right: 20px;
+        margin-top: -10px;
+    }
+    .price{
+        margin-bottom: -3px;
+    }
+    .price__title{
+        margin-left: 5px;
+        margin-top: 2px;
+    }
+    #price-origin{
+        display: none;
+    }
+    .data{
+        margin-top: -15px;
+      }
+    .price__button{
+        left: -50px;
+      }
+}

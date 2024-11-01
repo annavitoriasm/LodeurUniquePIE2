@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1product.css">
+    <link rel="stylesheet" href="3product.css">
+    <title>L'odeur Unique - CK EUPHORIA</title>
+</head>
+
+<body>
+     <!-- DEU CERTO BOTAR O AUDIOOOOOOOOOOOOO-->
+     <audio autoplay loop>
+        <source src=""> 
+    </audio>
+    <!-- 'NAV LIST' -->
+    <header>
+        <div class="navbar-mobile">
+        <a id="logo" href="../index.html#logo">L'odeur Unique</a>
+        <nav id="nav">
+            <button id="btn-mobile"><span id="hamburger"></span></button>
+            <ul id="menu">
+                <li><a href="../index.html#logo">Início</a></li>
+                <li><a href="../index.html#about">Sobre</a></li>
+                <li><a href="../index.html#shop">Produtos</a></li>
+                <li><a href="../index.html#message">Contato</a></li>
+                <li><a href="../carrinho/carrinho.html"><div class="cart-icon"></div></a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <!-- ===== HOME ===== -->
+    <main class="main grid">
+        <div class="home">
+
+            <!-- 'CARROSSEL' -->
+            <div class="box-slider">
+                <button class="b-crsl" id="prev"><img src="style/icons/arrow-carrossel.png" alt=""></button>
+                <div class="slid-img">
+                    <!-- ===== figure ===== -->
+                    <div class="figure slider on">
+                        <div class="figure__figure">
+                            <img src="style/img/ck.png" id="per3" class="figure__img shows on" color="#A29596"
+                                style="width: 450px; margin-right: -80px; padding-top: 45px;">
+                            <img src="style/img/ck.png" id="per3" class="figure__img on" color="#111111"
+                                style="width: 450px; margin-right: -80px; padding-top: 45px;">
+                        </div>
+                    </div>
+
+                    <img src="style/img/ck2.webp" alt="" class="slider">
+                    <img src="style/img/ck3.webp" alt="" class="slider">
+                    <img src="style/img/ck4.jpg" alt="" class="slider">
+                </div>
+                <button class="b-crsl" id="next"><img src="style/icons/arrow-carrossel.png" alt=""></button>
+            </div>
+
+        </div>
+
+        <!-- ===== IFORMATION ===== -->
+        <div class="info">
+            <!-- ===== DATA ===== -->
+            <div class="data">
+                <span class="data__subtitle">Euphoria Calvin Klein Feminino - Eau de Parfum - 100ml</span>
+                <h1 class="data__title">CK EUPHORIA</h1>
+                <p class="data__description">Uma homenagem à feminilidade, despertando a sensualidade. Com notas ricas e
+                    radiantes, a fragrância traz uma misteriosa e envolvente mistura de romã e orquídea negra que é
+                    realçada pela cremosidade da madeira de mogno.
+                    Notas de saída: Romã, Caqui, Acorde Verde
+                    Notas de corpo: Orquídea Negra, Flor de Lótus
+                    Notas de fundo: Acorde de Creme, Madeira de Mogno, Violeta
+                </p>
+            </div>
+
+            <!-- ===== ACTIONS ===== -->
+            <div class="actions">
+
+                <!-- ===== QUANTITY ===== -->
+                <div class="quantity">
+                    <h3 class="quantity__title">Qty.</h3>
+                    <div class="quantity__content">
+                        <input type="number" onkeyup="if(parseInt(this.value)>10){ this.value =10; return false; }"
+                            min="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57" $ id="number-qty"
+                            value="1">
+                        </input type="number" min="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                            $>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== PRICE ===== -->
+            <div class="price">
+                <span class="price__title">R$567.00</span><span id="price-origin">R$570.00</span>
+                <a href="../carrinho/carrinho.html" class="price__button">COMPRAR</a>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- MAIN -->
+    <script src="../menumobile.js"></script>
+    <script src="1product.js"></script>
+    <script src="../audio.js"></script>
+</body>
+
+</html>
