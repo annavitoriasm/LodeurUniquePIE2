@@ -41,4 +41,4 @@ Placeholder
 
 ---
 
-#### Feito com ❤️ por annavitoriasm e a Equipe do LodeurUnique
+#### Feito por annavitoriasm e a equipe do LodeurUnique
