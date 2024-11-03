@@ -1,21 +1,44 @@
-# LodeurUniquePIE2
- Cibersegurança - PIE 2.0 2024
+<div align="center">
+  <img src="https://github.com/Usaan/LodeurUniquePIE2/blob/main/Logo-Louder.png" alt="LodeurUnique Banner" width="400" height="auto">
+</div>
 
-#L´odeur Unique site integrantes:
+# LodeurUnique
+Placeholder
 
-ANNA VITÓRIA DA SILVA MARTINS;
-ANNA VITÓRIA FERREIRA PÁDUA;
-BRUNO FREITRAS SOBRAL;
-FRANCIELE SANTOS DA SILVA;
-GABRIEL ANTONIO ASSUNÇÃO OLIVEIRA;
-GUSTAVO HENRIQUE BORBA SILVA;
-ÍCARO MICHAEL SILVA DE ARAÚJO;
-JOÃO GABRIEL AGUIAR OLIVEIRA SILVA;
-LINDOMÁRIO DAMASCENO COELHO JÚNIOR;
-LUAN MEDEIROS COUTINHO;
-MARIA DO ROSÁRIO DE FÁTIMA COSTA DE ARAUJO;
-MARIANA PINHEIRO FERREIRA;
-PEDRO GABRIEL FREITAS SOBRAL;
-RYAN BARROSO DA COSTA FREITAS;
-VITOR EMANUEL SILVA MOREIRA;
-WITALLO KELVEN BATISTA DE SÁ;
+---
+
+## Tecnologias Utilizadas
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=html,tailwind,php">
+  <br/>
+  <br/>
+</div>
+
+- **HTML**: Essencial para desenvolvimento web, o HTML organiza conteúdo e estrutura informações para interfaces acessíveis e responsivas.
+- **TailWind**: Framework CSS de estilização com o principio utility-first, garantindo design web moderno e responsivo.
+- **PHP**: Linguagem de script de propósito geral, conhecida pela integração robusta com servidores e bancos de dados, ideal para sites dinâmicos e sistemas de gerenciamento de conteúdo.
+
+---
+
+## Autores
+- Anna Vitória da Silva Martins
+- Anna Vitória Ferreira Pádua
+- Bruno Freitras Sobral
+- Franciele Santos da Silva
+- Gabriel Antonio Assunção Oliveira
+- Gustavo Henrique Borba Silva
+- Ícaro Michael Silva de Araújo
+- João Gabriel Aguiar Oliveira Silva
+- Lindomário Damasceno Coelho Júnior
+- Luan Medeiros Coutinho
+- Maria do Rosário de Fátima Costa de Araujo
+- Mariana Pinheiro Ferreira
+- Pedro Gabriel Freitas Sobral
+- Ryan Barroso da Costa Freitas
+- Vitor Emanuel Silva Moreira
+- Witallo Kelven Batista de Sá
+
+---
+
+#### Feito por annavitoriasm e a equipe do LodeurUnique
