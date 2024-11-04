@@ -10,7 +10,7 @@ Placeholder
 ## Tecnologias Utilizadas
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=html,tailwind,php">
+  <img src="https://skillicons.dev/icons?i=html,tailwind,php,mysql">
   <br/>
   <br/>
 </div>
@@ -18,6 +18,7 @@ Placeholder
 - **HTML**: Essencial para desenvolvimento web, o HTML organiza conteúdo e estrutura informações para interfaces acessíveis e responsivas.
 - **TailWind**: Framework CSS de estilização com o principio utility-first, garantindo design web moderno e responsivo.
 - **PHP**: Linguagem de script de propósito geral, conhecida pela integração robusta com servidores e bancos de dados, ideal para sites dinâmicos e sistemas de gerenciamento de conteúdo.
+- **MySQL**: Banco de dados relacional rápido e confiável, amplamente utilizado com PHP para gerenciar dados em aplicativos web.
 
 ---
 
@@ -41,4 +42,4 @@ Placeholder
 
 ---
 
-#### Feito por annavitoriasm e a equipe do LodeurUnique
+#### Feito por annavitoriasm e a equipe do LodeurUnique🤍
