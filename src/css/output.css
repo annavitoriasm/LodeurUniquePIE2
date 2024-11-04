@@ -578,6 +578,22 @@ video {
   inset: 0px;
 }
 
+.m-48 {
+  margin: 12rem;
+}
+
+.m-36 {
+  margin: 9rem;
+}
+
+.m-40 {
+  margin: 10rem;
+}
+
+.m-10 {
+  margin: 2.5rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -624,6 +640,22 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.w-80 {
+  width: 20rem;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[1000px\] {
+  width: 1000px;
 }
 
 .flex-auto {
