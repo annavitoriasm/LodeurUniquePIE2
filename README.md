@@ -10,7 +10,7 @@ Placeholder
 ## Tecnologias Utilizadas
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=html,tailwind,php">
+  <img src="https://skillicons.dev/icons?i=html,tailwind,php,mysql">
   <br/>
   <br/>
 </div>
