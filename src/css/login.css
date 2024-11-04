@@ -37,3 +37,80 @@ html::-webkit-scrollbar-thumb {
     font-size: 62.5%;
     background: #222;
 }
+
+/* ---NAVBAR--- */
+#logo {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    padding-left: 40px;
+    padding-bottom: 15px;
+}
+
+header {
+    box-sizing: border-box;
+    z-index: 9999999;
+    height: 65px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+}
+
+.navbar-mobile {
+    display: flex;
+    padding-top: 15px;
+}
+
+.navbar-mobile, #logo {
+    font-size: 28px;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 25px;
+    margin-top: -10px;
+    margin-left: 130px;
+    margin-bottom: 10px;
+}
+
+#nav {
+    width: 1000px;
+}
+
+#menu a {
+    display: block;
+    padding: .6rem;
+    font-size: 18px;
+    transition: 0.75s;
+}
+#menu a:hover{
+    color: #666;
+    transition: 0.75s;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+.cart-icon {
+    width: 80px;
+    height: 70px;
+    background-image: url(../public/img/cart-icon.png);
+    background-size: contain;
+    transition: 0.75s;
+    margin-right: -100px;
+}
+
+.cart-icon:hover {
+    background-image: url(../public/img/cart-icon-click.png);
+    transition: 0.75s;
+}
