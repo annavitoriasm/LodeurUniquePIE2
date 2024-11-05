@@ -13,7 +13,7 @@
 <body>
     <!-- Música Ambiente - Criar card -->
     <audio autoplay loop>
-        <source src="audio/tema.mp3"> 
+        <source src="src/public/audio/tema.mp3"> 
     </audio>
     <!-- Navbar do mobile -->
     <header>
@@ -26,11 +26,27 @@
                     <li><a href="#about">Sobre</a></li>
                     <li><a href="#shop">Produtos</a></li>
                     <li><a href="#message">Contato</a></li>
-                    <li><a href="src/pages/carrinho.html">
-                            <div class="cart-icon"></div>
-                        </a></li>
+                    <li><a href="#" class="cart-toggle">
+                        <div class="cart-icon"></div>
+                    </a></li>
                 </ul>
             </nav>
+        </div>
+
+        <!-- Carrinho -->
+        <div class="cart">
+            <h2 class="cart-title">Carrinho</h2>
+            <div class="cart-content"></div>
+
+            <i class="detail"></i>
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">R$0,00</div>
+            </div>
+            <a href="src/pages/payment.html">
+                <button type="button" class="button-buy">Comprar</button>
+            </a>
+            <img class="close-cart" src="src/public/img/close.png" alt="">
         </div>
     </header>
 
@@ -53,23 +69,23 @@
         <div class="box-container">
 
             <div href="#" class="box">
-                <img src="style/img/1logo-dior.png">
+                <img src="src/public/img/1logo-dior.png">
             </div>
 
             <div href="#" class="box">
-                <img src="style/img/2logo-ck.png">
+                <img src="src/public/img/2logo-ck.png">
             </div>
 
             <div href="#" class="box">
-                <img src="style/img/3logo-sl.png">
+                <img src="src/public/img/3logo-sl.png">
             </div>
 
             <div href="#" class="box">
-                <img src="style/img/4logo-dg.png">
+                <img src="src/public/img/4logo-dg.png">
             </div>
 
             <div href="#" class="box">
-                <img src="style/img/5logo-pr.png">
+                <img src="src/public/img/5logo-pr.png">
             </div>
 
         </div>
@@ -101,7 +117,7 @@
             <div class="box">
                 <div class="img">
                     <a href="src/pages/produtos/1product.html">
-                        <img decoding="async" src="style/img/perfume-teste.webp">
+                        <img decoding="async" src="src/public/img/perfume-teste.webp">
                     </a>
                     <div class="icons">
                         <a href="produtos/1product.html" class="view"></a>
@@ -112,17 +128,17 @@
                 <div class="content">
                     <h3>LANCÔME LA NUIT TRÉSOR</h3>
                     <div class="price">R$298.00-<span>R$300.00</span></div>
-                    <a href="carrinho/carrinho.html" class="btn">ADICIONAR AO CARRINHO</a>
+                    <a class="btn">ADICIONAR AO CARRINHO</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="img">
-                    <a href="produtos/2product.html"><img decoding="async" src="style/img/Yparfum.png"
-                            style="padding-top: 10px;">
+                    <a href="src/pages/produtos/2product.html">
+                        <img decoding="async" src="src/public/img/Yparfum.png" style="padding-top: 10px;">
                     </a>
                     <div class="icons">
-                        <a href="produtos/2product.html" class="view"></a>
+                        <a href="src/pages/produtos/2product.html" class="view"></a>
                         <a href="#" class="heart"></a>
                         <a href="#" class="share"></a>
                     </div>
@@ -130,17 +146,17 @@
                 <div class="content">
                     <h3> Y LE PARFUM MASCULINO</h3>
                     <div class="price">R$1198.99-<span>$1200.00</span></div>
-                    <a href="carrinho/carrinho.html" class="btn">ADICIONAR AO CARRINHO</a>
+                    <a class="btn">ADICIONAR AO CARRINHO</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="img">
-                    <a href="produtos/3product.html"><img decoding="async" src="style/img/ck.png"
-                            style="width: 230px; padding: 10px;"></a>
-
+                    <a href="src/pages/produtos/3product.html">
+                        <img decoding="async" src="src/public/img/ck.png" style="width: 230px; padding: 10px;">
+                    </a>
                     <div class="icons">
-                        <a href="produtos/3product.html" class="view"></a>
+                        <a href="src/pages/produtos/3product.html" class="view"></a>
                         <a href="#" class="heart"></a>
                         <a href="#" class="share"></a>
                     </div>
@@ -148,17 +164,17 @@
                 <div class="content">
                     <h3>CK EUPHORIA</h3>
                     <div class="price">R$567.00-<span>R$570.00</span></div>
-                    <a href="carrinho/carrinho.html" class="btn">ADICIONAR AO CARRINHO</a>
+                    <a class="btn">ADICIONAR AO CARRINHO</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="img">
-                    <a href="produtos/4product.html"><img decoding="async" src="style/img/sauvage.png"
-                            style="padding-top: 10px;">
+                    <a href="src/pages/produtos/4product.html">
+                        <img decoding="async" src="src/public/img/sauvage.png" style="padding-top: 10px;">
                     </a>
                     <div class="icons">
-                        <a href="produtos/4product.html" class="view"></a>
+                        <a href="src/pages/produtos/4product.html" class="view"></a>
                         <a href="#" class="heart"></a>
                         <a href="#" class="share"></a>
                     </div>
@@ -166,17 +182,17 @@
                 <div class="content">
                     <h3>SAUVAGE ELIXIR</h3>
                     <div class="price">R$1595.99-<span>R$1599.00</span></div>
-                    <a href="carrinho/carrinho.html" class="btn">ADICIONAR AO CARRINHO</a>
+                    <a class="btn">ADICIONAR AO CARRINHO</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="img">
-                    <a href="produtos/5product.html"><img decoding="async" src="style/img/DG.png"
-                            style="width: 230px; padding: 10px;">
+                    <a href="src/pages/produtos/5product.html">
+                        <img decoding="async" src="src/public/img/DG.png" style="width: 230px; padding: 10px;">
                     </a>
                     <div class="icons">
-                        <a href="produtos/5product.html" class="view"></a>
+                        <a href="src/pages/produtos/5product.html" class="view"></a>
                         <a href="#" class="heart"></a>
                         <a href="#" class="share"></a>
                     </div>
@@ -184,16 +200,17 @@
                 <div class="content">
                     <h3>DEVOTION DOLCE & GABBANA </h3>
                     <div class="price">R$648.99-<span>R$650.00</span></div>
-                    <a href="carrinho/carrinho.html" class="btn">ADICIONAR AO CARRINHO</a>
+                    <a class="btn">ADICIONAR AO CARRINHO</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="img">
-                    <a href="produtos/6product.html"><img decoding="async" src="style/img/mi.png">
+                    <a href="src/pages/produtos/6product.html">
+                        <img decoding="async" src="src/public/img/mi.png">
                     </a>
                     <div class="icons">
-                        <a href="produtos/6product.html" class="view"></a>
+                        <a href="src/pages/produtos/6product.html" class="view"></a>
                         <a href="#" class="heart"></a>
                         <a href="#" class="share"></a>
                     </div>
@@ -201,16 +218,17 @@
                 <div class="content">
                     <h3> 1 MILLION RABANE</h3>
                     <div class="price">R$709.99-<span>R$711.99</span></div>
-                    <a href="carrinho/carrinho.html" class="btn">ADICIONAR AO CARRINHO</a>
+                    <a class="btn">ADICIONAR AO CARRINHO</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="img">
-                    <a href="produtos/7product.html"><img decoding="async" src="produtos/style/img/Azarro1.png">
+                    <a href="src/pages/produtos/7product.html">
+                        <img decoding="async" src="src/pages/produtos/style/img/Azarro1.png">
                     </a>
                     <div class="icons">
-                        <a href="produtos/7product.html" class="view"></a>
+                        <a href="src/pages/produtos/7product.html" class="view"></a>
                         <a href="#" class="heart"></a>
                         <a href="#" class="share"></a>
                     </div>
@@ -218,16 +236,17 @@
                 <div class="content">
                     <h3> WANTED AZARRO</h3>
                     <div class="price">R$560.00-<span>R$600.00</span></div>
-                    <a href="carrinho/carrinho.html" class="btn">ADICIONAR AO CARRINHO</a>
+                    <a class="btn">ADICIONAR AO CARRINHO</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="img">
-                    <a href="produtos/8product.html"><img decoding="async" src="produtos/style/img/polo1.png">
+                    <a href="src/pages/produtos/8product.html">
+                        <img decoding="async" src="src/pages/produtos/style/img/polo1.png">
                     </a>
                     <div class="icons">
-                        <a href="produtos/8product.html" class="view"></a>
+                        <a href="src/pages/produtos/8product.html" class="view"></a>
                         <a href="#" class="heart"></a>
                         <a href="#" class="share"></a>
                     </div>
@@ -235,17 +254,18 @@
                 <div class="content">
                     <h3> RALPH LAUREN POLO</h3>
                     <div class="price">R$670.00-<span>R$800.00</span></div>
-                    <a href="carrinho/carrinho.html" class="btn">ADICIONAR AO CARRINHO</a>
+                    <a class="btn">ADICIONAR AO CARRINHO</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="img">
-                    <a href="produtos/9product.html"><img decoding="async" src="style/img/belle.png"
+                    <a href="src/pages/produtos/9product.html">
+                        <img decoding="async" src="src/public/img/belle.png"
                             style="width: 250px; height: 195px; margin-top: 40px;">
                     </a>
                     <div class="icons">
-                        <a href="produtos/9product.html" class="view"></a>
+                        <a href="src/pages/produtos/9product.html" class="view"></a>
                         <a href="#" class="heart"></a>
                         <a href="#" class="share"></a>
                     </div>
@@ -253,17 +273,18 @@
                 <div class="content">
                     <h3> LA VIE BELLE</h3>
                     <div class="price">R$699.00-<span>R$800.00</span></div>
-                    <a href="carrinho/carrinho.html" class="btn">ADICIONAR AO CARRINHO</a>
+                    <a class="btn">ADICIONAR AO CARRINHO</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="img">
-                    <a href="produtos/10product.html"><img decoding="async" src="produtos/style/img/VICTORY1 (1).png"
+                    <a href="src/pages/produtos/10product.html">
+                        <img decoding="async" src="src/pages/produtos/style/img/VICTORY1 (1).png"
                             style="width: 200px; height: 200px; margin-top: 49px;">
                     </a>
                     <div class="icons">
-                        <a href="produtos/10product.html" class="view"></a>
+                        <a href="src/pages/produtos/10product.html" class="view"></a>
                         <a href="#" class="heart"></a>
                         <a href="#" class="share"></a>
                     </div>
@@ -271,16 +292,17 @@
                 <div class="content">
                     <h3> INVICTUS VICTORY ELIXIR</h3>
                     <div class="price">R$770.00-<span>R$800.00</span></div>
-                    <a href="carrinho/carrinho.html" class="btn">ADICIONAR AO CARRINHO</a>
+                    <a class="btn">ADICIONAR AO CARRINHO</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="img">
-                    <a href="produtos/11product.html"><img decoding="async" src="produtos/style/img/chloé1 (1).png">
+                    <a href="src/pages/produtos/11product.html">
+                        <img decoding="async" src="src/pages/produtos/style/img/chloé1 (1).png">
                     </a>
                     <div class="icons">
-                        <a href="produtos/11product.html" class="view"></a>
+                        <a href="src/pages/produtos/11product.html" class="view"></a>
                         <a href="#" class="heart"></a>
                         <a href="#" class="share"></a>
                     </div>
@@ -288,15 +310,16 @@
                 <div class="content">
                     <h3>CHLOÉ NATURELLE</h3>
                     <div class="price">R$580.00-<span>R$750.00</span></div>
-                    <a href="carrinho/carrinho.html" class="btn">ADICIONAR AO CARRINHO</a>
+                    <a class="btn">ADICIONAR AO CARRINHO</a>
                 </div>
             </div>
             <div class="box">
                 <div class="img">
-                    <a href="produtos/12product.html"><img decoding="async" src="produtos/style/img/erba1 (1).png">
+                    <a href="src/pages/produtos/12product.html">
+                        <img decoding="async" src="src/pages/produtos/style/img/erba1 (1).png">
                     </a>
                     <div class="icons">
-                        <a href="produtos/12product.html" class="view"></a>
+                        <a href="src/pages/produtos/12product.html" class="view"></a>
                         <a href="#" class="heart"></a>
                         <a href="#" class="share"></a>
                     </div>
@@ -304,7 +327,7 @@
                 <div class="content">
                     <h3>ERBA PURA EAU</h3>
                     <div class="price">R$2500.00-<span>R$2700.00</span></div>
-                    <a href="carrinho/carrinho.html" class="btn">ADICIONAR AO CARRINHO</a>
+                    <a class="btn">ADICIONAR AO CARRINHO</a>
                 </div>
             </div>
 
@@ -327,19 +350,19 @@
     <section class="services">
 
         <div class="box">
-            <img decoding="async" src="style/img/icon-1.png" alt="">
+            <img decoding="async" src="src/public/img/icon-1.png" alt="">
             <h3>Entrega grátis</h3>
             <p>Aproveite nossa entrega grátis para todas as suas compras, sem custo adicional! Escolha seus produtos favoritos e receba-os diretamente na sua porta, sem pagar taxas de envio. Compre agora e aproveite essa vantagem exclusiva!</p>
         </div>
 
         <div class="box">
-            <img decoding="async" src="style/img/icon-2.png" alt="">
+            <img decoding="async" src="src/public/img/icon-2.png" alt="">
             <h3>Pagamento seguro</h3>
             <p>Garantimos um atendimento seguro, protegendo suas informações pessoais e financeiras com rigorosos protocolos de segurança e tecnologias avançadas, treinados para tratar seus dados de forma confidencial. Compre com tranquilidade e confiança!</p>
         </div>
 
         <div class="box">
-            <img decoding="async" src="style/img/icon-3.png" alt="">
+            <img decoding="async" src="src/public/img/icon-3.png" alt="">
             <h3>Suporte 24 horas</h3>
             <p>Estamos disponíveis para você 24 horas por dia, 7 dias por semana! Nossa equipe de suporte está sempre pronta para ajudar, seja por telefone, chat online, e-mail ou redes sociais. Conte conosco a qualquer momento para uma experiência de compra impecável!</p>
         </div>
@@ -372,5 +395,6 @@
 </body>
 <script src="src/script/main.js"></script>
 <script src="src/script/menumobile.js"></script>
+<script src="src/script/carrinho.js"></script>
 
 </html>
