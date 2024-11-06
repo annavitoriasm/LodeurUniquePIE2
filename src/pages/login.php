@@ -45,7 +45,7 @@
                 <div class="mt-2">
                   <div
                     class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-zinc-950 sm:max-w-md">
-                    <input type="text" name="username" id="username" autocomplete="username"
+                    <input type="text" name="username" id="username"
                       class="block flex-1 border-0 bg-transparent py-1.5 pl-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm/6"
                       placeholder="defina um nome de usuário">
                   </div>
@@ -56,7 +56,7 @@
                 <div class="mt-2">
                   <div
                     class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-zinc-950 sm:max-w-md">
-                    <input type="password" name="username" id="username" autocomplete="username"
+                    <input type="password" name="username" id="username"
                       class="block flex-1 border-0 bg-transparent py-1.5 pl-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm/6 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
                       placeholder="defina uma senha segura">
                   </div>
@@ -73,7 +73,7 @@
               <div class="sm:col-span-3">
                 <label for="first-name" class="block text-sm/6 font-medium text-gray-900">Primeiro Nome</label>
                 <div class="mt-2">
-                  <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                  <input type="text" name="first-name" id="first-name"
                     class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-zinc-950 sm:text-sm/6">
                 </div>
               </div>
@@ -81,7 +81,7 @@
               <div class="sm:col-span-3">
                 <label for="last-name" class="block text-sm/6 font-medium text-gray-900">Sobrenome</label>
                 <div class="mt-2">
-                  <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                  <input type="text" name="last-name" id="last-name"
                     class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-zinc-950 sm:text-sm/6">
                 </div>
               </div>
@@ -89,7 +89,7 @@
               <div class="sm:col-span-2 sm:col-start-1">
                 <label for="cpf" class="block text-sm/6 font-medium text-gray-900">CPF</label>
                 <div class="mt-2">
-                  <input type="text" name="cpf" id="cpf" autocomplete="cpf"
+                  <input type="text" name="cpf" id="cpf"
                     class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-zinc-950 sm:text-sm/6">
                 </div>
               </div>
@@ -97,7 +97,7 @@
               <div class="sm:col-span-2">
                 <label for="nascimento" class="block text-sm/6 font-medium text-gray-900">Data de Nascimento</label>
                 <div class="mt-2">
-                  <input type="date" name="nascimento" id="nascimento" autocomplete="address-level1"
+                  <input type="date" name="nascimento" id="nascimento"
                     class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-zinc-950 sm:text-sm/6">
                 </div>
               </div>
@@ -106,7 +106,7 @@
                 <label for="email" class="block text-sm/6 font-medium text-gray-900">
                   Endereço de Email</label>
                 <div class="mt-2">
-                  <input id="email" name="email" type="email" autocomplete="email"
+                  <input id="email" name="email" type="email" 
                     class="peer block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-zinc-950 sm:text-sm/6 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500">
                     <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
                       Por favor, forneça um endereço de email válido.
@@ -117,7 +117,7 @@
               <div class="col-span-full">
                 <label for="street-address" class="block text-sm/6 font-medium text-gray-900">Endereço</label>
                 <div class="mt-2">
-                  <input type="text" name="street-address" id="street-address" autocomplete="street-address"
+                  <input type="text" name="street-address" id="street-address"
                     class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-zinc-950 sm:text-sm/6">
                 </div>
               </div>
@@ -125,7 +125,7 @@
               <div class="sm:col-span-2 sm:col-start-1">
                 <label for="city" class="block text-sm/6 font-medium text-gray-900">Cidade</label>
                 <div class="mt-2">
-                  <input type="text" name="city" id="city" autocomplete="address-level2"
+                  <input type="text" name="city" id="city"
                     class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-zinc-950 sm:text-sm/6">
                 </div>
               </div>
@@ -133,7 +133,7 @@
               <div class="sm:col-span-2">
                 <label for="region" class="block text-sm/6 font-medium text-gray-900">Estado</label>
                 <div class="mt-2">
-                  <input type="text" name="region" id="region" autocomplete="address-level1"
+                  <input type="text" name="region" id="region"
                     class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-zinc-950 sm:text-sm/6">
                 </div>
               </div>
@@ -141,7 +141,7 @@
               <div class="sm:col-span-2">
                 <label for="postal-code" class="block text-sm/6 font-medium text-gray-900">CEP</label>
                 <div class="mt-2">
-                  <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code"
+                  <input type="text" name="postal-code" id="postal-code"
                     class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-zinc-950 sm:text-sm/6">
                 </div>
               </div>
@@ -166,4 +166,26 @@
   </div>
   
 </body>
+
+<?php
+
+include_once('loginConfig.php');
+
+$usuario = $_POST['usuario'];
+$senha = $_POST['senha'];
+$primeiroNome = $_POST['primeiroNome'];
+$sobrenome = $_POST['sobrenome'];
+$cpf = $_POST['cpf'];
+$dataNasc = $_POST['dataNasc'];
+$email = $_POST['email'];
+$endreco = $_POST['endreco'];
+$cidade = $_POST['cidade'];
+$estado = $_POST['estado'];
+$cep = $_POST['cep'];
+
+$result = mysqli_query($conexao, "INSERT INTO usuario(usuario,senha,primeiroNome,sobrenome,cpf,dataNasc,email,endereço,cidade,estado,cep)
+VALUES ('$usuario','$senha','$primeiroNome','$sobrenome','$cpf','$dataNasc','$email','$endereço','$cidade','$estado','$cep')");
+
+?>
+
 </html>

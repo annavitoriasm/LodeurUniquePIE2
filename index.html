@@ -13,7 +13,7 @@
 <body>
     <!-- Música Ambiente - Criar card -->
     <audio autoplay loop>
-        <source src="src/public/audio/tema.mp3"> 
+        <!-- <source src="src/public/audio/tema.mp3">  -->
     </audio>
     <!-- Navbar do mobile -->
     <header>
@@ -43,12 +43,35 @@
                 <div class="total-title">Total</div>
                 <div class="total-price">R$0,00</div>
             </div>
-            <a href="src/pages/payment.html">
+            <!-- <a href="src/pages/payment.html"> -->
                 <button type="button" class="button-buy">Comprar</button>
-            </a>
+            <!-- </a> -->
             <img class="close-cart" src="src/public/img/close.png" alt="">
         </div>
     </header>
+
+    <!-- POPUP LOGIN -->
+    <dialog>
+
+        <div class="container-login">
+            <div class="title-login">
+                <div class="text-login">
+                    <h3 class="h3-login">Login</h3>
+                    <p class="desc-login">Por favor, preencha os dados para acessar a conta e realizar compras.</p>
+                </div>
+                <button class="btn-cls-login">
+                    <img class="close-cart" src="src/public/img/close.png" class="close-login">
+                </button>
+            </div>
+            <form id="form-login">
+                <input required type="email" placeholder="Email" class="box inp-login" name="email">
+                <input required type="password" placeholder="Senha" class="box inp-login" name="senha">
+                <input required type="number" placeholder="CPF" class="box inp-login" name="cpf">
+                <button type="submit" class="btn btn-login">Entrar</button>
+            </form>
+        </div>
+
+    </dialog>
 
     <!-- CARROSSEL -->
     <section class="home" id="home">
@@ -396,5 +419,6 @@
 <script src="src/script/main.js"></script>
 <script src="src/script/menumobile.js"></script>
 <script src="src/script/carrinho.js"></script>
+<script src="src/script/login.js"></script>
 
 </html>
