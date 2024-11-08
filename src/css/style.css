@@ -626,37 +626,37 @@ dialog{
 }
 
 .view {
-    background-image: url(style/img/view-icon.png);
+    background-image: url(../public/img/view-icon.png);
     background-size: contain;
     transition: 0.75s;
 }
 
 .view:hover {
-    background-image: url(style/img/view-icon-hover.png);
+    background-image: url(../public/img/view-icon-hover.png);
     background-size: contain;
     transition: 0.75s;
 }
 
 .heart {
-    background-image: url(style/img/heart-icon.png);
+    background-image: url(../public/img/heart-icon.png);
     background-size: contain;
     transition: 0.75s;
 }
 
 .heart:hover {
-    background-image: url(style/img/heart-icon-hover.png);
+    background-image: url(../public/img/heart-icon-hover.png);
     background-size: contain;
     transition: 0.75s;
 }
 
 .share {
-    background-image: url(style/img/share-icon.png);
+    background-image: url(../public/img/share-icon.png);
     background-size: contain;
     transition: 0.75s;
 }
 
 .share:hover {
-    background-image: url(style/img/share-icon-hover.png);
+    background-image: url(../public/img/share-icon-hover.png);
     background-size: contain;
     transition: 0.75s;
 }
