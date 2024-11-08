@@ -59,34 +59,34 @@
                 </div>
               </div>
 
-                <div class="flex sm:col-span-6 gap-[30px]">
+              <div class="flex sm:col-span-6 gap-[30px]">
 
                 <div class="sm:col-span-3">
-                <label for="first-name" class="block text-sm/6 font-medium text-gray-900">CPF</label>
-                <div class="mt-2">
-                  <input type="text" name="first-name" id="first-name" autocomplete="given-name"
-                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm/6">
+                  <label for="first-name" class="block text-sm/6 font-medium text-gray-900">CPF</label>
+                  <div class="mt-2">
+                    <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                      class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm/6">
+                  </div>
                 </div>
+
+                <div class="sm:col-span-3">
+                  <label for="first-name" class="block text-sm/6 font-medium text-gray-900">Data de Nascimento</label>
+                  <div class="mt-2">
+                    <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                      class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm/6">
+                  </div>
+                </div>
+
+                <div class="sm:col-span-3">
+                  <label for="last-name" class="block text-sm/6 font-medium text-gray-900">Telefone </label>
+                  <div class="mt-2">
+                    <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                      class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm/6">
+                  </div>
+
+                </div>
+
               </div>
-
-              <div class="sm:col-span-3">
-                <label for="first-name" class="block text-sm/6 font-medium text-gray-900">Data de Nascimento</label>
-                <div class="mt-2">
-                  <input type="text" name="first-name" id="first-name" autocomplete="given-name"
-                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm/6">
-                </div>
-              </div>
-
-              <div class="sm:col-span-3">
-                <label for="last-name" class="block text-sm/6 font-medium text-gray-900">Telefone </label>
-                <div class="mt-2">
-                  <input type="text" name="last-name" id="last-name" autocomplete="family-name"
-                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm/6">
-                </div>
-
-              </div>
-
-                </div>
 
               <div class="sm:col-span-3">
                 <label for="first-name" class="block text-sm/6 font-medium text-gray-900">Estado</label>
@@ -167,11 +167,12 @@
                 </div>
 
                 <div class="ms-4 text-sm">
-                  <label for="pay-on-delivery" class="font-medium leading-none text-gray-900"> 
-                  <i class="fa-brands fa-pix"></i>
+                  <label for="pay-on-delivery" class="font-medium leading-none text-gray-900">
+                    <i class="fa-brands fa-pix"></i>
                     Pix
                   </label>
-                  <p id="pay-on-delivery-text" class="mt-1 text-xs font-normal text-gray-500 ">Geramos o QR Code e o código para você! </p>
+                  <p id="pay-on-delivery-text" class="mt-1 text-xs font-normal text-gray-500 ">Geramos o QR Code e o
+                    código para você! </p>
                 </div>
               </div>
 
@@ -190,16 +191,17 @@
                 </div>
 
                 <div class="ms-4 text-sm">
-                  <label for="pay-on-delivery" class="font-medium leading-none text-gray-900"> 
-                    <i class="fa-solid fa-credit-card"></i>  
-                    Cartão de crédito 
+                  <label for="pay-on-delivery" class="font-medium leading-none text-gray-900">
+                    <i class="fa-solid fa-credit-card"></i>
+                    Cartão de crédito
                   </label>
                   <p id="pay-on-delivery-text" class="mt-1 text-xs font-normal text-gray-500 ">Com parcelamento</p>
                 </div>
               </div>
 
               <div class="mt-4 flex items-center gap-2">
-                <button type="button" class="text-sm font-medium text-gray-500 hover:text-gray-900">xxxx/xxx/...</button>
+                <button type="button"
+                  class="text-sm font-medium text-gray-500 hover:text-gray-900">xxxx/xxx/...</button>
 
                 <div class="h-3 w-px shrink-0 bg-gray-200"></div>
 
@@ -216,16 +218,18 @@
                 </div>
 
                 <div class="ms-4 text-sm">
-                  <label for="pay-on-delivery" class="font-medium leading-none text-gray-900"> 
-                    <i class="fa-solid fa-credit-card"></i>  
+                  <label for="pay-on-delivery" class="font-medium leading-none text-gray-900">
+                    <i class="fa-solid fa-credit-card"></i>
                     Cartão de débito
                   </label>
-                  <p id="pay-on-delivery-text" class="mt-1 text-xs font-normal text-gray-500 ">Local ou internacional</p>
+                  <p id="pay-on-delivery-text" class="mt-1 text-xs font-normal text-gray-500 ">Local ou internacional
+                  </p>
                 </div>
               </div>
 
               <div class="mt-4 flex items-center gap-2">
-                <button type="button" class="text-sm font-medium text-gray-500 hover:text-gray-900">xxxx/xxx/...</button>
+                <button type="button"
+                  class="text-sm font-medium text-gray-500 hover:text-gray-900">xxxx/xxx/...</button>
 
                 <div class="h-3 w-px shrink-0 bg-gray-200"></div>
 
@@ -239,57 +243,57 @@
 
         <div class="grid grid-cols-1 gap-4 md:grid-cols-3 mt-[15px]">
 
-            <div class="flex w-[500px] gap-[15px]">
+          <div class="flex w-[500px] gap-[15px]">
 
-              <div class="shadow-md w-[210px] rounded-lg border border-gray-200 bg-gray-50 p-4 ps-4">
-                <div class="flex items-start">
-                  <div class="flex h-5 items-center">
-                    <input id="pay-on-delivery" aria-describedby="pay-on-delivery-text" type="radio"
-                      name="payment-method" value=""
-                      class="h-4 w-4 border-gray-300 bg-white text-black focus:ring-2 focus:ring-black" />
-                  </div>
+            <div class="shadow-md w-[210px] rounded-lg border border-gray-200 bg-gray-50 p-4 ps-4">
+              <div class="flex items-start">
+                <div class="flex h-5 items-center">
+                  <input id="pay-on-delivery" aria-describedby="pay-on-delivery-text" type="radio" name="payment-method"
+                    value="" class="h-4 w-4 border-gray-300 bg-white text-black focus:ring-2 focus:ring-black" />
+                </div>
 
-                  <div class="ms-4 text-sm">
-                    <label for="pay-on-delivery" class="font-medium leading-none text-gray-900"> 
+                <div class="ms-4 text-sm">
+                  <label for="pay-on-delivery" class="font-medium leading-none text-gray-900">
                     <i class="fa-solid fa-barcode"></i>
-                      Boleto bancário
-                    </label>
-                    <p id="pay-on-delivery-text" class="mt-1 text-xs font-normal text-gray-500 ">Pode levar até 5 dias para processar o pagamento.</p>
-                  </div>
-                </div>
-
-                <div class="mt-4 flex items-center gap-2">
-
-                  <div class="h-3 w-px shrink-0 bg-gray-200"></div>
-
+                    Boleto bancário
+                  </label>
+                  <p id="pay-on-delivery-text" class="mt-1 text-xs font-normal text-gray-500 ">Pode levar até 5 dias
+                    para processar o pagamento.</p>
                 </div>
               </div>
 
-              <div class="shadow-md w-[210px] rounded-lg border border-gray-200 bg-gray-50 p-4 ps-4">
-                <div class="flex items-start">
-                  <div class="flex h-5 items-center">
-                    <input id="pay-on-delivery" aria-describedby="pay-on-delivery-text" type="radio"
-                      name="payment-method" value=""
-                      class="h-4 w-4 border-gray-300 bg-white text-black focus:ring-2 focus:ring-black" />
-                  </div>
+              <div class="mt-4 flex items-center gap-2">
 
-                  <div class="ms-4 text-sm">
-                    <label for="pay-on-delivery" class="font-medium leading-none text-gray-900"> 
-                    <i class="fa-brands fa-paypal"></i>
-                      PayPal
-                    </label>
-                    <p id="pay-on-delivery-text" class="mt-1 text-xs font-normal text-gray-500 ">Precisará do cadastro de sua conta PayPal</p>
-                  </div>
-                </div>
+                <div class="h-3 w-px shrink-0 bg-gray-200"></div>
 
-                <div class="mt-4 flex items-center gap-2">
-
-                  <div class="h-3 w-px shrink-0 bg-gray-200"></div>
-
-                </div>
               </div>
-
             </div>
+
+            <div class="shadow-md w-[210px] rounded-lg border border-gray-200 bg-gray-50 p-4 ps-4">
+              <div class="flex items-start">
+                <div class="flex h-5 items-center">
+                  <input id="pay-on-delivery" aria-describedby="pay-on-delivery-text" type="radio" name="payment-method"
+                    value="" class="h-4 w-4 border-gray-300 bg-white text-black focus:ring-2 focus:ring-black" />
+                </div>
+
+                <div class="ms-4 text-sm">
+                  <label for="pay-on-delivery" class="font-medium leading-none text-gray-900">
+                    <i class="fa-brands fa-paypal"></i>
+                    PayPal
+                  </label>
+                  <p id="pay-on-delivery-text" class="mt-1 text-xs font-normal text-gray-500 ">Precisará do cadastro de
+                    sua conta PayPal</p>
+                </div>
+              </div>
+
+              <div class="mt-4 flex items-center gap-2">
+
+                <div class="h-3 w-px shrink-0 bg-gray-200"></div>
+
+              </div>
+            </div>
+
+          </div>
 
         </div>
 
@@ -322,8 +326,6 @@
   </div>
 
   </div>
-
-  <script src="../script/order.js"></script>
 
 </body>
 
