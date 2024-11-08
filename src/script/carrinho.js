@@ -52,7 +52,12 @@ function listCart() {
                 </div>
             </div>
             <div class="buttons">
-                <input class="cart-quantity" type="number" min="1" max="99" value="${item.quantity}">
+                <div class="quantity">
+                    <h3 class="quantity__title">Qty.</h3>
+                    <div class="quantity__content">
+                        <input class="cart-quantity" id="number-qty" type="number" min="1" max="99" value="${item.quantity}">
+                    </div>
+                </div>
                 <img class="cart-remove" src="src/public/img/trash-bin.png" alt="">
             </div>
         `;
