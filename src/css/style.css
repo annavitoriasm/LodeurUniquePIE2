@@ -28,7 +28,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar {
-    width: 1rem;
+    width: 0.5rem;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -165,7 +165,7 @@ header {
 }
 
 .cart-title {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 20px;
 }
 
