@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/annavitoriasm/LodeurUniquePIE2/blob/src/public/img/Logo-Lodeur.png" alt="LodeurUnique Banner" width="400" height="auto">
+  <img src="https://github.com/annavitoriasm/LodeurUniquePIE2/blob/main/src/public/img/Logo-Lodeur.png" alt="LodeurUnique Banner" width="400" height="auto">
 </div>
 
 # LodeurUnique
