@@ -145,6 +145,17 @@ header {
 }
 
 /* Carrinho */
+.cart::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.cart::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.cart::-webkit-scrollbar-thumb {
+    background: #41414142;
+}
 .cart {
     position: fixed;
     z-index: 9999;
@@ -173,17 +184,20 @@ header {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    background: #c4c2c2;
-    border: 0.2rem solid #222;
+    background: #c4c2c200;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
 .cart-img {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+    margin: 6px;
+}
+
+.detail-box{
+    margin-right: 8px;
 }
 
 .cart-product-title {
@@ -205,6 +219,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 3rem;
+    margin-top: -5px;
 }
 
 .buttons .cart-quantity {
@@ -214,7 +229,39 @@ header {
     border-radius: 6px;
 }
 
+.quantity__title {
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+  
+  .quantity__content {
+    width: 60px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: .5rem;
+    border-radius: .25rem;
+  }
+  
+  #number-qty {
+    background-color: transparent;
+    padding: 3px;
+    width: 96px;
+    height: 26px;
+    margin-left: 4.5px;
+    color: white;
+    border-style: none;
+    text-align: center;
+  
+  }
+
 .buttons .cart-remove {
+    margin-top: 16px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
 }
 
@@ -579,37 +626,37 @@ dialog{
 }
 
 .view {
-    background-image: url(style/img/view-icon.png);
+    background-image: url(../public/img/view-icon.png);
     background-size: contain;
     transition: 0.75s;
 }
 
 .view:hover {
-    background-image: url(style/img/view-icon-hover.png);
+    background-image: url(../public/img/view-icon-hover.png);
     background-size: contain;
     transition: 0.75s;
 }
 
 .heart {
-    background-image: url(style/img/heart-icon.png);
+    background-image: url(../public/img/heart-icon.png);
     background-size: contain;
     transition: 0.75s;
 }
 
 .heart:hover {
-    background-image: url(style/img/heart-icon-hover.png);
+    background-image: url(../public/img/heart-icon-hover.png);
     background-size: contain;
     transition: 0.75s;
 }
 
 .share {
-    background-image: url(style/img/share-icon.png);
+    background-image: url(../public/img/share-icon.png);
     background-size: contain;
     transition: 0.75s;
 }
 
 .share:hover {
-    background-image: url(style/img/share-icon-hover.png);
+    background-image: url(../public/img/share-icon-hover.png);
     background-size: contain;
     transition: 0.75s;
 }
