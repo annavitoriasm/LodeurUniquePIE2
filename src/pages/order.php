@@ -305,12 +305,10 @@
 
   <div class="mb-10 flex items-center justify-end gap-x-6 w-[790px]">
     <button type="button" class="text-sm/6 w-20 font-semibold text-gray-900">Cancelar</button>
-    <a href="payment.html">
-      <button
+      <button type="submit"
         class="rounded-md w-20 bg-black px-3 py-2 text-sm font-semibold hover:bg-[rgba(19,19,19,0.96)] text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900">
-          Finalizar
+          Finalizar <a href="payment.html"></a>
       </button>
-    </a>
   </div>
   </form>
   </div>
@@ -318,7 +316,14 @@
   <!-- LISTA PEDIDO -->
   <div class="cart active mr-[180px] pl-[65px] pr-0 z-20">
     <h2 class="cart-title text-2xl font-medium text-gray-900">Confirmar Pedido </h2>
-    <div class="cart-content"></div>
+    <div class="mt-[-20px] mb-2">
+      <p class="mt-1 text-base/6 text-gray-600">emailusuario@gmail.com</p>
+      <p class="mt-0 text-base/5 text-gray-600">CPF: XXX.XXX.XXX</p>
+    </div>
+    <div class="cart-content">
+
+
+    </div>
 
     <i class="detail"></i>
     <div class="total">
