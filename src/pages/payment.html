@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'odeur Unique | Payment</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../css/payment.css">
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'odeur Unique | Payment</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../css/payment.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar-mobile">
+            <a id="logo" href="../../index.html">L'odeur Unique</a>
+            <nav id="nav">
+                <button id="btn-mobile"><span id="hamburger"></span></button>
+                <ul id="menu">
+                    <li><a href="../../index.html" class="font-medium">Início</a></li>
+                    <li><a href="../../index.html#about" class="font-medium">Sobre</a></li>
+                    <li><a href="../../index.html#shop" class="font-medium">Produtos</a></li>
+                    <li><a href="../../index.html#message" class="font-medium">Contato</a></li>
+                    <li><a>
+                        <div class="cart-icon"></div>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="container" class="w-full p-28">
+        <div id="order">
+
+        </div>
+    </div>
+
+    <dialog id="dialog">
+
+        <div class="container-login">
+            <div class="title-login">
+                <div class="flex justify-end w-full mt-[-5px]">
+                    <button id="btn-cls" class="flex items-center">
+                        <img class="w-[15px] h-[15px] opacity-60 hover:opacity-100 mt-[-10px]" src="../public/img/close.png" alt="Fechar">
+                    </button>
+                </div>
+                <div class="grid mt-[5px]">
+                    <div class="flex justify-center items-center">
+                        <video autoplay muted playsinline class="w-[120px] h-[120px] opacity-70">
+                            <source src="../public/img/confirm-payment.mp4" type="video/mp4">
+                            Seu navegador não suporta esta animação :c
+                        </video>
+                    </div>
+                    <div class="title-login flex flex-col items-center z-20 mt-[-15px] text-center">
+                        <h3 class="text-4xl font-semibold text-gray-900">Pagamento confirmado!</h3>
+                        <p class="mt-2 text-2xl text-gray-600">Seu pedido está a caminho.</p>
+                        <button id="btn-cls2" class="rounded-md w-[120px] h-[35px] bg-black mt-9 px-3 py-2 text-2xl hover:bg-[rgba(19,19,19,0.96)] font-medium text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900">
+                            OK
+                        </button>
+                    </div>
+            </div>
+        </div>
+
+    </dialog>
+
+    <script src="../script/payment.js"></script>
+    <script src="../script/menumobile.js"></script>
+</body>
+</html>

@@ -305,8 +305,12 @@
 
   <div class="mb-10 flex items-center justify-end gap-x-6 w-[790px]">
     <button type="button" class="text-sm/6 w-20 font-semibold text-gray-900">Cancelar</button>
-    <button type="submit"
-      class="rounded-md w-20 bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900">Finalizar</button>
+    <a href="payment.html">
+      <button
+        class="rounded-md w-20 bg-black px-3 py-2 text-sm font-semibold hover:bg-[rgba(19,19,19,0.96)] text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900">
+          Finalizar
+      </button>
+    </a>
   </div>
   </form>
   </div>
