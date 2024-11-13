@@ -427,6 +427,51 @@ dialog{
     border-width: 2px;
 }
 
+/* 'COOKIES' */
+#cookieBanner {
+    z-index: 9999999;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #161616e3;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    display: none;
+  }
+
+  #cookieBanner button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    color: #fff;
+    background: #4da04df3;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+
+  #cookieBanner button:hover{
+    background: #61d361f6;
+    font: bold;
+  }
+
+  #cookieBanner button.reject:hover{
+    background: #e95252;
+    font: bold;
+  }
+  #cookieBanner button.reject {
+    margin-left: 5px;
+    background: #ca5858d8;
+  }
+
+.fa-cookie-bite{
+    color: white;
+    font-size: 20px;
+    margin-right: 5px;
+    padding-bottom: -10px;
+}
+
 /* 'CARROSSEL' */
 .box-slider{
     width: 100%;
