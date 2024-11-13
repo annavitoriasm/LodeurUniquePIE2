@@ -17,6 +17,8 @@
     <title>L'odeur Unique | Payment</title>
     <link rel="stylesheet" href="../css/output.css">
     <link rel="stylesheet" href="../css/payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/46a37dcaa9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -37,12 +39,6 @@
             </nav>
         </div>
     </header>
-
-    <div id="container" class="w-full p-28">
-        <div id="order">
-
-        </div>
-    </div>
 
     <dialog id="dialog">
 
@@ -72,7 +68,107 @@
 
     </dialog>
 
-    <script src="../script/payment.js"></script>
+    <div class="w-full grid pl-[71px] pt-10 mb-[70px]">
+        <h3 class="caption-top text-left text-[26px] font-semibold text-black mb-5">
+            <i class="fa-solid fa-basket-shopping text-black text[22px] pr-3"></i>
+            Seus Pedidos
+        </h3>
+        
+        <div id="pedido" class="pt-5 w-max border-solid border-t-0 border-l-0 pb-5 border-r-0 border-[rgba(24,24,24,0.39)] border-b-[0.5px]">
+            
+            <h3 class="text-left text-3xl font-semibold text-black mb-3">
+                - Pedido #3333
+            </h3>
+            <div id="info-pedido" class="grid">
+                <table class="table w-max text-start border-spacing-40">
+                    <tbody class="text-[15px]">
+                      <tr>
+                        <td><img src="../public/img/sauvage.png" id="foto-produto" class="w-[60px] h-[60px]"></td>
+                        <td>Perfume tal</td>
+                        <td>Qty. 2</td>
+                        <td>R$ 1.900</td>
+                      </tr>
+                      <tr>
+                        <td><img src="../public/img/sauvage.png" id="foto-produto" class="w-[60px] h-[60px]"></td>
+                        <td>Perfume tal</td>
+                        <td>Qty. 2</td>
+                        <td>R$ 1.900</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div id="Total" class="text-[15px] font-bold mt-4">
+                    <p>Total: R$9.999,00</p>
+                  </div>
+
+                  <div class="flex text-[15px] gap-6">
+        
+                    <div id="info-user" class="flex gap-5 mt-5 w-max text-center">
+                        <i class="fa-solid fa-image-portrait text-black text-[22px]"></i>
+                        <p id="nome-user">Anna Vitoria da Silva Martins</p>
+                        <p id="telefone-user">(99) 9999-999</p>
+                    </div>
+                    <div id="endereco-user" class="flex gap-5 mt-5 text-center">
+                        <i class="fa-solid fa-location-dot text-black text-[22px]"></i>
+                        <p id="endereco">Rod.MA 030 itapecuruzinho</p>
+                        <p id="numero">08</p>
+                        <p id="complemento">próximo a ...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="pedido" class="pt-5 w-max mt-12 border-solid border-t-0 border-l-0 pb-5 border-r-0 border-[rgba(24,24,24,0.39)] border-b-[0.5px]">
+            
+            <h3 class="text-left text-3xl font-semibold text-black mb-3">
+                - Pedido #3333
+            </h3>
+            <div id="info-pedido" class="grid">
+                <table class="table w-max text-start border-spacing-40">
+                    <tbody class="text-[15px]">
+                      <tr>
+                        <td><img src="../public/img/sauvage.png" id="foto-produto" class="w-[60px] h-[60px]"></td>
+                        <td>Perfume tal</td>
+                        <td>Qty. 2</td>
+                        <td>R$ 1.900</td>
+                      </tr>
+                      <tr>
+                        <td><img src="../public/img/sauvage.png" id="foto-produto" class="w-[60px] h-[60px]"></td>
+                        <td>Perfume tal</td>
+                        <td>Qty. 2</td>
+                        <td>R$ 1.900</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div id="Total" class="text-[15px] font-bold mt-4">
+                    <p>Total: R$9.999,00</p>
+                  </div>
+
+                  <div class="flex text-[15px] gap-6">
+        
+                    <div id="info-user" class="flex gap-5 mt-5 w-max text-center">
+                        <i class="fa-solid fa-image-portrait text-black text-[22px]"></i>
+                        <p id="nome-user">Anna Vitoria da Silva Martins</p>
+                        <p id="telefone-user">(99) 9999-999</p>
+                    </div>
+                    <div id="endereco-user" class="flex gap-5 mt-5 text-center">
+                        <i class="fa-solid fa-location-dot text-black text-[22px]"></i>
+                        <p id="endereco">Rod.MA 030 itapecuruzinho</p>
+                        <p id="numero">08</p>
+                        <p id="complemento">próximo a ...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- <script src="../script/payment.js"></script> -->
     <script src="../script/menumobile.js"></script>
 </body>
 </html>

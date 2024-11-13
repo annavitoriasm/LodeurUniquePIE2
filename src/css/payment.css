@@ -177,3 +177,7 @@ dialog{
     align-items: center;
     padding: 20px;
 }
+
+td{
+    padding-right: 20px;
+}
