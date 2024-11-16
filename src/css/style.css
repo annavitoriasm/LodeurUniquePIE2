@@ -349,13 +349,18 @@ dialog{
     text-align: center;
     align-items: center;
     padding: 30px;
+    padding-top: 70px;
 }
 
 .title-login{
     display: flex;
+    width: 100%;
     justify-content: space-between;
     margin-left: 35px;
     margin-right: 35px;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
 }
 
 .h3-login{
@@ -369,11 +374,19 @@ dialog{
     margin-top: 3.5px;
 }
 
+.text-login{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 #form-login{
     display: grid;
     justify-content: center;
     align-items: center;
-    
     padding: 30px;
     padding-top: 10px;
     margin-top: -10px;
@@ -382,6 +395,7 @@ dialog{
 .close-login{
     width: 5px;
     height: 5px;
+    margin-right: -10px;
 }
 
 .btn-cls-login{
@@ -389,7 +403,7 @@ dialog{
     width: 5px;
     height: 5px;
     cursor: pointer;
-    margin-top: -5px;
+    margin-top: -20px;
 }
 
 .btn-login{
