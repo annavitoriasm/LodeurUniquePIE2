@@ -341,56 +341,22 @@
 </html>
 
 <?php
-require_once('sqlconfig.php');
 
-# alguém tem que ver isso aí
-$_POST['usuario'] = "lilacringe'; DROP TABLE usuario; --";
-$_POST['senha'] = "pemba123@'";
-$_POST['primeiroNome'] = "Lila<script>alert('XSS')</script>";
-$_POST['sobrenome'] = "da Silva Pereba";
-$_POST['cpf'] = "000.000.000-00";
-$_POST['dataNasc'] = "2000-01-01";
-$_POST['email'] = "testuser@example.com'; DROP TABLE usuario; --";
-$_POST['endereco'] = " Rua das Flores, 123 ";
-$_POST['cidade'] = "Cidade Exemplo<img src='x' onerror='alert(1)'>";
-$_POST['estado'] = "Estado Exemplo";
-$_POST['cep'] = "' OR 1=1 --";
+include_once('loginConfig.php');
 
-# Conectando ao Supabase
-$connection = new PDO($dsn, $dbUser, $dbPassword, [
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-]);
+$usuario = $_POST['usuario'];
+$senha = $_POST['senha'];
+$primeiroNome = $_POST['primeiroNome'];
+$sobrenome = $_POST['sobrenome'];
+$cpf = $_POST['cpf'];
+$dataNasc = $_POST['dataNasc'];
+$email = $_POST['email'];
+$endreco = $_POST['endreco'];
+$cidade = $_POST['cidade'];
+$estado = $_POST['estado'];
+$cep = $_POST['cep'];
 
-$sql = "INSERT INTO usuario (usuario, senha, primeiroNome, sobrenome, cpf, dataNasc, email, endereco, cidade, estado, cep)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+$result = mysqli_query($conexao, "INSERT INTO usuario(usuario,senha,primeiroNome,sobrenome,cpf,dataNasc,email,endereço,cidade,estado,cep)
+VALUES ('$usuario','$senha','$primeiroNome','$sobrenome','$cpf','$dataNasc','$email','$endereço','$cidade','$estado','$cep')");
 
-# Preparando a query com os parâmetros
-$stmt = $connection->prepare($sql);
-
-# Livrando os parametros de possíveis caracteres especiais
-$Data = array_map('trim', $_POST);
-$Data = array_map(function($value) {
-    return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
-}, $Data);
-
-# Filtrando os campos email, cpf e cep
-$Data['email'] = filter_var($Data['email'], FILTER_SANITIZE_EMAIL);
-$Data['cpf'] = preg_replace('/\D/', '', $Data['cpf']);
-$Data['cep'] = preg_replace('/\D/', '', $Data['cep']);
-
-// Executar a consulta com os parâmetros
-$stmt->execute([
-    $Data['usuario'],
-    $Data['senha'],
-    $Data['primeiroNome'],
-    $Data['sobrenome'],
-    $Data['cpf'],
-    $Data['dataNasc'],
-    $Data['email'],
-    $Data['endereco'],
-    $Data['cidade'],
-    $Data['estado'],
-    $Data['cep']
-]);
 ?>
