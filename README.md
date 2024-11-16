@@ -10,32 +10,32 @@ Placeholder
 ## Tecnologias Utilizadas
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=html,tailwind,php,mysql">
+  <img src="https://skillicons.dev/icons?i=html,tailwind,js,php,supabase">
   <br/>
   <br/>
 </div>
 
 - **HTML**: Essencial para desenvolvimento web, o HTML organiza conteúdo e estrutura informações para interfaces acessíveis e responsivas.
 - **TailWind**: Framework CSS de estilização com o principio utility-first, garantindo design web moderno e responsivo.
+- **JavaScript**: Linguagem de programação versátil que permite criar interações dinâmicas e responsivas em páginas web, proporcionando experiências imersivas aos usuários.
 - **PHP**: Linguagem de script de propósito geral, conhecida pela integração robusta com servidores e bancos de dados, ideal para sites dinâmicos e sistemas de gerenciamento de conteúdo.
-
+- **Supabase**: Plataforma de backend que combina PostgreSQL, autenticação robusta e APIs em tempo real para criar aplicativos web modernos e escaláveis.
 ---
 
 ## Autores
 - Anna Vitória da Silva Martins
 - Anna Vitória Ferreira Pádua
-- Bruno Freitras Sobral
-- Franciele Santos da Silva
+- Eduardo Fernandes Silva
 - Gabriel Antonio Assunção Oliveira
-- Gustavo Henrique Borba Silva
 - Ícaro Michael Silva de Araújo
 - João Gabriel Aguiar Oliveira Silva
+- Kayke Breno Lima da Silva
 - Lindomário Damasceno Coelho Júnior
 - Luan Medeiros Coutinho
 - Maria do Rosário de Fátima Costa de Araujo
 - Mariana Pinheiro Ferreira
-- Pedro Gabriel Freitas Sobral
 - Ryan Barroso da Costa Freitas
+- Sara Victória da Costa Silva
 - Vitor Emanuel Silva Moreira
 - Witallo Kelven Batista de Sá
 
