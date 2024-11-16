@@ -2,8 +2,8 @@
   <img src="https://github.com/annavitoriasm/LodeurUniquePIE2/blob/main/src/public/img/Logo-Lodeur.png" alt="LodeurUnique Banner" width="400" height="auto">
 </div>
 
-# LodeurUnique
-Placeholder
+# L'odeurUnique
+Conheça a L'odeurUnique, sua perfumaria online de confiança, onde você encontra uma seleção exclusiva de fragrâncias de marcas renomadas, ideais para todos os gostos e ocasiões. Em nosso site, oferecemos uma experiência de compra prática e segura, com navegação intuitiva e páginas de design elegante. A equipe da L'odeurUnique garante a você perfumes de alta qualidade e uma jornada de compra que combina conveniência, segurança e sofisticação! ✨
 
 ---
 
@@ -41,4 +41,4 @@ Placeholder
 
 ---
 
-#### Feito por annavitoriasm e a equipe do LodeurUnique🤍
+#### Feito por annavitoriasm e a equipe do L'odeurUnique🤍
