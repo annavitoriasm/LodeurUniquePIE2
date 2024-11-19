@@ -31,9 +31,60 @@
     </div>
   </header>
 
-  <div id="container" class="flex m-[80px] mt-6 mb-0">
+  <div id="container" class="flex-row m-[80px] mt-6 mb-0">
+
 
     <div id="content" class="w-[700px] flex-1 relative">
+
+        <!-- REGISTRO DE INFORMAÇÕES - INICIO -->
+
+  <div class="pb-12 ml-[63px]">
+            <h3 class="text-2xl font-medium text-gray-900 mt-[15px] mb-5">Seus Endereços
+            </h3>
+
+
+            
+                <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+                  <div class="flex w-[800px] gap-[15px]">
+                    
+                    <div class="shadow-md max-w-[210px] min-w-[210px] overflow-hidden rounded-lg border border-gray-200 bg-gray-50 p-4 ps-4">
+                      <div class="flex items-start">
+                        <div class="flex h-5 items-center">
+                          <input id="endereco1" type="radio" name="endereco1"
+                            value="" class="h-4 w-4 border-gray-300 bg-white text-black focus:ring-2 focus:ring-black" />
+                        </div>
+
+                        <div class="ms-4 text-sm overflow-hidden whitespace-nowrap truncate">
+                          <label class="font-medium leading-none text-gray-900">
+                            09, Rod.MA 034 awawawawawawawa
+                          </label>
+                          <p id="endereco1-info" class="mt-1 text-xs font-normal text-gray-500 overflow-hidden whitespace-nowrap truncate ">
+                            9999-999, próximo a AWA AWA WA
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="mt-4 flex items-center gap-2">
+                        <button type="button"
+                          class="text-sm font-medium text-gray-500 hover:text-gray-900">Remover</button>
+
+                        <div class="h-3 w-px shrink-0 bg-gray-200"></div>
+
+                        <button type="button" class="text-sm font-medium text-gray-500 hover:text-gray-900">Editar</button>
+                      </div>
+                    </div>
+
+
+
+
+
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        <!-- REGISTRO DE INFORMAÇÕES - FIM -->
 
       <div id="container-form">
         <form class="w-[650px] ml-16 mt-[-15px]" action="" method="POST">

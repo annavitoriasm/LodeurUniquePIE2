@@ -46,8 +46,8 @@
                 <div class="total-title">Total</div>
                 <div class="total-price" id="total-price">R$0,00</div>
             </div>
-            <a href="src/pages/order.php">
-                <button type="button" class="button-buy">Comprar</button>
+            <a>
+                <button onclick="onLoginButtonClick()" type="button" class="button-buy">Comprar</button>
             </a>
             <img class="close-cart" src="src/public/img/close.png" alt="">
         </div>
@@ -62,7 +62,7 @@
                     <h3 class="h3-login">Login</h3>
                     <p class="desc-login">Por favor, preencha os dados para acessar a conta e realizar compras.</p>
                 </div>
-                <button class="btn-cls-login">
+                <button onclick="closeModal()" class="btn-cls-login">
                     <img class="close-cart" src="src/public/img/close.png" class="close-login">
                 </button>
             </div>
