@@ -87,7 +87,7 @@
         <!-- REGISTRO DE INFORMAÇÕES - FIM -->
 
       <div id="container-form">
-        <form class="w-[650px] ml-16 mt-[-15px]" action="" method="POST">
+        <form class="w-[650px] ml-16 mt-[-15px]" action="validate_order.php" method="POST">
           <div class="border-b border-gray-900/10 pb-12">
             <h2 class="text-2xl font-semibold text-gray-900">Informações</h2>
             <p class="mt-1 text-base/6 text-gray-600">Preencha as informações corretamente para realizar seu pedido no
@@ -123,7 +123,7 @@
                 <div class="sm:col-span-3">
                   <label class="block text-sm/6 font-medium text-gray-900">Data de Nascimento</label>
                   <div class="mt-2">
-                    <input required type="date" name="datanasc" id="dataNasc"
+                    <input required type="date" name="data_nasc" id="data_nasc"
                       class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm/6">
                   </div>
                 </div>
@@ -390,104 +390,3 @@
 </body>
 
 </html>
-
-<?php
-require_once('sqlconfig.php');
-
-$nome = isset($_POST['nome']) ? mysqli_real_escape_string($conexao, $_POST['nome']) : '';
-$sobrenome = isset($_POST['sobrenome']) ? mysqli_real_escape_string($conexao, $_POST['sobrenome']) : '';
-$cpf = isset($_POST['cpf']) ? mysqli_real_escape_string($conexao, $_POST['cpf']) : '';
-$dataNasc = isset($_POST['datanasc']) ? mysqli_real_escape_string($conexao, $_POST['datanasc']) : '';
-$dataNasc = date("Y-m-d", strtotime(str_replace('/', '-', $dataNasc)));
-
-$telefone = isset($_POST['telefone']) ? mysqli_real_escape_string($conexao, $_POST['telefone']) : '';
-$estado = isset($_POST['estado']) ? mysqli_real_escape_string($conexao, $_POST['estado']) : '';
-$cidade = isset($_POST['cidade']) ? mysqli_real_escape_string($conexao, $_POST['cidade']) : '';
-$endereco = isset($_POST['endereco']) ? mysqli_real_escape_string($conexao, $_POST['endereco']) : '';
-$cep = isset($_POST['cep']) ? mysqli_real_escape_string($conexao, $_POST['cep']) : '';
-$numeroend = isset($_POST['numeroend']) ? mysqli_real_escape_string($conexao, (int)$_POST['numeroend']) : 0;
-$complemento = isset($_POST['complemento']) ? mysqli_real_escape_string($conexao, $_POST['complemento']) : '';
-
-# Conectando ao Supabase
-$connection = new PDO($dsn, $dbUser, $dbPassword, [
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-]);
-
-$sql ="INSERT INTO cliente_pedido (nome, sobrenome, cpf, dataNasc, telefone, estado, cidade, endereco, cep, numeroend, complemento) 
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-
-# Preparando a query com os parâmetros
-$stmt = $connection->prepare($sql);
-
-# Livrando os parametros de possíveis caracteres especiais
-$Data = array_map('trim', $_POST);
-$Data = array_map(function($value) {
-    return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
-}, $Data);
-
-# Filtrando os campos email, cpf e cep
-$Data['email'] = filter_var($Data['email'], FILTER_SANITIZE_EMAIL);
-$Data['cpf'] = preg_replace('/\D/', '', $Data['cpf']);
-$Data['cep'] = preg_replace('/\D/', '', $Data['cep']);
-
-// Executar a consulta com os parâmetros
-$stmt->execute([
-    $Data['usuario'],
-    $Data['senha'],
-    $Data['primeiroNome'],
-    $Data['sobrenome'],
-    $Data['cpf'],
-    $Data['dataNasc'],
-    $Data['email'],
-    $Data['endereco'],
-    $Data['cidade'],
-    $Data['estado'],
-    $Data['cep']
-]);
-
-?>
-
-
-<?php
-// Adicionando os dados do usuário no banco de dados //
-/*
-include_once('orderConfig.php');
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    
-    $nome = isset($_POST['nome']) ? mysqli_real_escape_string($conexao, $_POST['nome']) : '';
-    $sobrenome = isset($_POST['sobrenome']) ? mysqli_real_escape_string($conexao, $_POST['sobrenome']) : '';
-    $cpf = isset($_POST['cpf']) ? mysqli_real_escape_string($conexao, $_POST['cpf']) : '';
-    $dataNasc = isset($_POST['datanasc']) ? mysqli_real_escape_string($conexao, $_POST['datanasc']) : '';
-    $dataNasc = date("Y-m-d", strtotime(str_replace('/', '-', $dataNasc)));
-
-    $telefone = isset($_POST['telefone']) ? mysqli_real_escape_string($conexao, $_POST['telefone']) : '';
-    $estado = isset($_POST['estado']) ? mysqli_real_escape_string($conexao, $_POST['estado']) : '';
-    $cidade = isset($_POST['cidade']) ? mysqli_real_escape_string($conexao, $_POST['cidade']) : '';
-    $endereco = isset($_POST['endereco']) ? mysqli_real_escape_string($conexao, $_POST['endereco']) : '';
-    $cep = isset($_POST['cep']) ? mysqli_real_escape_string($conexao, $_POST['cep']) : '';
-    $numeroend = isset($_POST['numeroend']) ? mysqli_real_escape_string($conexao, (int)$_POST['numeroend']) : 0;
-    $complemento = isset($_POST['complemento']) ? mysqli_real_escape_string($conexao, $_POST['complemento']) : '';
-
-
-    $query = "INSERT INTO cliente_pedido (nome, sobrenome, cpf, dataNasc, telefone, estado, cidade, endereco, cep, numeroend, complemento) 
-              VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-
-    $result = mysqli_prepare($conexao, $query);
-  
-    mysqli_stmt_bind_param($result, "sssssssssis", $nome, $sobrenome, $cpf, $dataNasc, $telefone, $estado, $cidade, $endereco, $cep, $numeroend, $complemento);
-
-    if (mysqli_stmt_execute($result)) {
-        echo "Usuário cadastrado com sucesso!";
-    } else {
-        echo "Erro ao cadastrar o usuário: " . mysqli_error($conexao);
-    }
-
-    mysqli_stmt_close($result);
-    mysqli_close($conexao);
-} else {
-    echo "A página foi carregada sem o envio do formulário.";
-}
-*/
-?>
