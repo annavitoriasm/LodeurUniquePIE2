@@ -47,7 +47,7 @@
                 <div class="total-price" id="total-price">R$0,00</div>
             </div>
             <a>
-                <button onclick="onLoginButtonClick()" type="button" class="button-buy">Comprar</button>
+                <button type="button" class="button-buy">Comprar</button>
             </a>
             <img class="close-cart" src="src/public/img/close.png" alt="">
         </div>
@@ -70,7 +70,7 @@
                 <input required type="email" placeholder="Email" class="box inp-login" name="email">
                 <input required type="password" placeholder="Senha" class="box inp-login" name="senha">
                 <input required type="number" placeholder="CPF" class="box inp-login" name="cpf">
-                <button type="submit" class=" btn-login">Entrar</button>
+                <button type="submit" onclick="onLoginButtonClick()" class=" btn-login">Entrar</button>
             </form>
         </div>
 
