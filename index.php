@@ -69,7 +69,6 @@
             <form id="form-login" action="" method="POST">
                 <input required type="email" placeholder="Email" class="box inp-login" name="email">
                 <input required type="password" placeholder="Senha" class="box inp-login" name="senha">
-                <input required type="number" placeholder="CPF" class="box inp-login" name="cpf">
                 <button type="submit" onclick="onLoginButtonClick()" class=" btn-login">Entrar</button>
             </form>
         </div>
