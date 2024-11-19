@@ -66,7 +66,7 @@
                     <img class="close-cart" src="src/public/img/close.png" class="close-login">
                 </button>
             </div>
-            <form id="form-login" action="" method="POST">
+            <form id="form-login" action="./src/pages/validate_email.php" method="POST">
                 <input required type="email" placeholder="Email" class="box inp-login" name="email">
                 <input required type="password" placeholder="Senha" class="box inp-login" name="senha">
                 <button type="submit" onclick="onLoginButtonClick()" class=" btn-login">Entrar</button>
@@ -484,12 +484,12 @@
 
 </html>
 
-<script> 
+<script>
 // Recebe os produtos no formato JSON e lista os produtos no carrinho //
 
-function carregarCarrinho() 
+function carregarCarrinho()
 {
-    fetch(window.location.href, { 
+    fetch(window.location.href, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
@@ -524,14 +524,14 @@ function carregarCarrinho()
                     <button type="button" class="update-quantity" data-id="${item.id}">Atualizar</button>
                     <img class="cart-remove" src="src/public/img/trash-bin.png" alt="">
                 </div>
-            
+
             `;
             // Atualiza o total //
             total += parseFloat(item.preco) * item.quantidade;
         });
 
         // Atualiza o valor total //
-        document.getElementById('total-price').textContent = 
+        document.getElementById('total-price').textContent =
         `R$${total.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).replace('.','').replace(',', '.')}`;
     })
     .catch(error => console.error('Erro ao carregar o carrinho:', error));
@@ -568,7 +568,7 @@ document.addEventListener('click', (event) => {
     if (event.target && event.target.classList.contains('update-quantity')) {
         const id = event.target.getAttribute('data-id');
         const quantidade = document.querySelector(`input[data-id="${id}"]`).value;
-        
+
         if (quantidade >= 1) {
             atualizarQuantidade(id, quantidade);
         } else {
@@ -607,7 +607,7 @@ function removerProduto(id_produto) {
 document.addEventListener('click', (event) => {
     if (event.target && event.target.classList.contains('cart-remove')) {
         const id = event.target.closest('.buttons').querySelector('input.cart-quant').getAttribute('data-id');
-        
+
         if (confirm("Você tem certeza que deseja remover este produto do carrinho?")) {
             removerProduto(id);
         }

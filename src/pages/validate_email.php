@@ -6,8 +6,7 @@ use PHPMailer\PHPMailer\Exception;
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../../');
 $dotenv->load();
 
-#$email = $_POST['email'];
-$email = 'zeroonezerotwozerothree04@gmail.com';
+$email = $_POST['email'];
 $mail = new PHPMailer(true);
 
 try {
@@ -61,7 +60,7 @@ try {
             <img src='https://i.imgur.com/9Akpe7W.png' alt='logo' width='200'>
             <p><br>Olá!</p>
             <p>Obrigado por se cadastrar no LodeurUnique! Por favor, clique no botão abaixo para finalizar o seu cadastro no site.</p>
-            <a href='http://127.0.0.1:6969/src/pages/valid.html' class='button'>Confirmar email</a>
+            <a href='http://localhost:6969/src/pages/valid.php' class='button'>Confirmar email</a>
             <p><br>Atenciosamente,<br>
             Equipe LodeurUnique</p>
         </body>
@@ -69,8 +68,11 @@ try {
     ";
 
     $mail->send();
-    echo 'E-mail de verificação enviado com sucesso!';
+    exit;
 } catch (Exception $e) {
     echo "Erro ao enviar o e-mail: {$mail->ErrorInfo}";
+    sleep(2);
+    header("Location: http://localhost:6969/");
+    exit;
 }
 ?>
