@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'odeur Unique | Home</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/46a37dcaa9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,8 +30,8 @@
                     <li><a href="#shop">Produtos</a></li>
                     <li><a href="#message">Contato</a></li>
                     <li><a href="#" class="cart-toggle">
-                        <div class="cart-icon"></div>
-                    </a></li>
+                            <div class="cart-icon"></div>
+                        </a></li>
                 </ul>
             </nav>
         </div>
@@ -66,19 +68,40 @@
                     <img class="close-cart" src="src/public/img/close.png" class="close-login">
                 </button>
             </div>
-            <form id="form-login" action="./src/pages/validate_email.php" method="POST">
+            <form id="form-login" method="POST">
                 <input required type="email" placeholder="Email" class="box inp-login" name="email">
                 <input required type="password" placeholder="Senha" class="box inp-login" name="senha">
-                <button type="submit" class=" btn-login">Entrar</button>
+                <button onclick="confirmEmail()" class=" btn-login">Entrar</button>
             </form>
         </div>
 
+        <!-- CONFIRMAÇÃO DE EMAIL -->
+
+        <div class="panel-confirm pCClose">
+                    <div class="container-confirm">
+                        <button type="submit" onclick="closePage()" class="btn-cls-confirm">
+                            <img class="close-cart" src="src/public/img/close.png" class="close-login">
+                        </button>
+                        <i class="fa-regular fa-paper-plane"></i>
+                        <p class="txt-confirm">
+                            Email de confirmação enviado!
+                        </p>
+                        <p class="txt2-confirm">
+                            Após a confirmação será possível finalizar a compra.
+                        </p>
+
+                        <button type="submit" onclick="closePage()" class="btn-confirm">
+                            Okay
+                        </button>
+                    </div>
+                </div>
     </dialog>
 
     <!-- COOKIES -->
     <div id="cookieBanner">
         <i class="fa-solid fa-cookie-bite"></i>
-        Este site utiliza cookies para melhorar sua experiência de navegação, analisar o tráfego do site e personalizar o conteúdo.
+        Este site utiliza cookies para melhorar sua experiência de navegação, analisar o tráfego do site e personalizar
+        o conteúdo.
         <button onclick="setConsent('accepted')">Aceitar</button>
         <button class="reject" onclick="setConsent('rejected')">Rejeitar</button>
     </div>
@@ -91,8 +114,10 @@
                 <img src="src/public/img/banner2.png" alt="" class="slider">
             </div>
             <div class="box-b">
-                <button class="b-crsl" id="prev"><img src="src/pages/produtos/style/icons/arrow-carrossel.png" alt=""></button>
-                <button class="b-crsl" id="next"><img src="src/pages/produtos/style/icons/arrow-carrossel.png" alt=""></button>
+                <button class="b-crsl" id="prev"><img src="src/pages/produtos/style/icons/arrow-carrossel.png"
+                        alt=""></button>
+                <button class="b-crsl" id="next"><img src="src/pages/produtos/style/icons/arrow-carrossel.png"
+                        alt=""></button>
             </div>
         </div>
     </section>
@@ -162,8 +187,10 @@
                     <h3>LANCÔME LA NUIT TRÉSOR</h3>
                     <div class="price">R$298.00-<span>R$300.00</span></div>
                     <form action="" method="POST">
-                        <input required type="hidden" placeholder="produto_id"  name="produto_id" min="1" max="1" value="1">
-                        <input required type="hidden" placeholder="quantidade"  name="quantidade" min="1" max="1" value="1">
+                        <input required type="hidden" placeholder="produto_id" name="produto_id" min="1" max="1"
+                            value="1">
+                        <input required type="hidden" placeholder="quantidade" name="quantidade" min="1" max="1"
+                            value="1">
                         <button type="submit" class="btn" name="submit">ADICIONAR AO CARRINHO</button>
                     </form>
                 </div>
@@ -184,8 +211,10 @@
                     <h3> Y LE PARFUM MASCULINO</h3>
                     <div class="price">R$1198.99-<span>R$1200.00</span></div>
                     <form action="" method="POST">
-                        <input required type="hidden" placeholder="produto_id"  name="produto_id" min="2" max="2" value="2">
-                        <input required type="hidden" placeholder="quantidade"  name="quantidade" min="1" max="1" value="1">
+                        <input required type="hidden" placeholder="produto_id" name="produto_id" min="2" max="2"
+                            value="2">
+                        <input required type="hidden" placeholder="quantidade" name="quantidade" min="1" max="1"
+                            value="1">
                         <button type="submit" class="btn" name="submit">ADICIONAR AO CARRINHO</button>
                     </form>
                 </div>
@@ -206,8 +235,10 @@
                     <h3>CK EUPHORIA</h3>
                     <div class="price">R$567.00-<span>R$570.00</span></div>
                     <form action="" method="POST">
-                        <input required type="hidden" placeholder="produto_id"  name="produto_id" min="3" max="3" value="3">
-                        <input required type="hidden" placeholder="quantidade"  name="quantidade" min="1" max="1" value="1">
+                        <input required type="hidden" placeholder="produto_id" name="produto_id" min="3" max="3"
+                            value="3">
+                        <input required type="hidden" placeholder="quantidade" name="quantidade" min="1" max="1"
+                            value="1">
                         <button type="submit" class="btn" name="submit">ADICIONAR AO CARRINHO</button>
                     </form>
                 </div>
@@ -228,8 +259,10 @@
                     <h3>SAUVAGE ELIXIR</h3>
                     <div class="price">R$1595.99-<span>R$1599.00</span></div>
                     <form action="" method="POST">
-                        <input required type="hidden" placeholder="produto_id"  name="produto_id" min="4" max="4" value="4">
-                        <input required type="hidden" placeholder="quantidade"  name="quantidade" min="1" max="1" value="1">
+                        <input required type="hidden" placeholder="produto_id" name="produto_id" min="4" max="4"
+                            value="4">
+                        <input required type="hidden" placeholder="quantidade" name="quantidade" min="1" max="1"
+                            value="1">
                         <button type="submit" class="btn" name="submit">ADICIONAR AO CARRINHO</button>
                     </form>
                 </div>
@@ -250,8 +283,10 @@
                     <h3>DEVOTION DOLCE & GABBANA</h3>
                     <div class="price">R$648.99-<span>R$650.00</span></div>
                     <form action="" method="POST">
-                        <input required type="hidden" placeholder="produto_id"  name="produto_id" min="5" max="5" value="5">
-                        <input required type="hidden" placeholder="quantidade"  name="quantidade" min="1" max="1" value="1">
+                        <input required type="hidden" placeholder="produto_id" name="produto_id" min="5" max="5"
+                            value="5">
+                        <input required type="hidden" placeholder="quantidade" name="quantidade" min="1" max="1"
+                            value="1">
                         <button type="submit" class="btn" name="submit">ADICIONAR AO CARRINHO</button>
                     </form>
                 </div>
@@ -272,8 +307,10 @@
                     <h3>1 MILLION RABANE</h3>
                     <div class="price">R$709.99-<span>R$711.99</span></div>
                     <form action="" method="POST">
-                        <input required type="hidden" placeholder="produto_id"  name="produto_id" min="6" max="6" value="6">
-                        <input required type="hidden" placeholder="quantidade"  name="quantidade" min="1" max="1" value="1">
+                        <input required type="hidden" placeholder="produto_id" name="produto_id" min="6" max="6"
+                            value="6">
+                        <input required type="hidden" placeholder="quantidade" name="quantidade" min="1" max="1"
+                            value="1">
                         <button type="submit" class="btn" name="submit">ADICIONAR AO CARRINHO</button>
                     </form>
                 </div>
@@ -294,8 +331,10 @@
                     <h3>WANTED AZARRO</h3>
                     <div class="price">R$560.00-<span>R$600.00</span></div>
                     <form action="" method="POST">
-                        <input required type="hidden" placeholder="produto_id"  name="produto_id" min="7" max="7" value="7">
-                        <input required type="hidden" placeholder="quantidade"  name="quantidade" min="1" max="1" value="1">
+                        <input required type="hidden" placeholder="produto_id" name="produto_id" min="7" max="7"
+                            value="7">
+                        <input required type="hidden" placeholder="quantidade" name="quantidade" min="1" max="1"
+                            value="1">
                         <button type="submit" class="btn" name="submit">ADICIONAR AO CARRINHO</button>
                     </form>
                 </div>
@@ -316,8 +355,10 @@
                     <h3>RALPH LAUREN POLO</h3>
                     <div class="price">R$670.00-<span>R$800.00</span></div>
                     <form action="" method="POST">
-                        <input required type="hidden" placeholder="produto_id"  name="produto_id" min="8" max="8" value="8">
-                        <input required type="hidden" placeholder="quantidade"  name="quantidade" min="1" max="1" value="1">
+                        <input required type="hidden" placeholder="produto_id" name="produto_id" min="8" max="8"
+                            value="8">
+                        <input required type="hidden" placeholder="quantidade" name="quantidade" min="1" max="1"
+                            value="1">
                         <button type="submit" class="btn" name="submit">ADICIONAR AO CARRINHO</button>
                     </form>
                 </div>
@@ -339,8 +380,10 @@
                     <h3>LA VIE BELLE</h3>
                     <div class="price">R$699.00-<span>R$800.00</span></div>
                     <form action="" method="POST">
-                        <input required type="hidden" placeholder="produto_id"  name="produto_id" min="9" max="9" value="9">
-                        <input required type="hidden" placeholder="quantidade"  name="quantidade" min="1" max="1" value="1">
+                        <input required type="hidden" placeholder="produto_id" name="produto_id" min="9" max="9"
+                            value="9">
+                        <input required type="hidden" placeholder="quantidade" name="quantidade" min="1" max="1"
+                            value="1">
                         <button type="submit" class="btn" name="submit">ADICIONAR AO CARRINHO</button>
                     </form>
                 </div>
@@ -362,8 +405,10 @@
                     <h3> INVICTUS VICTORY ELIXIR</h3>
                     <div class="price">R$770.00-<span>R$800.00</span></div>
                     <form action="" method="POST">
-                        <input required type="hidden" placeholder="produto_id"  name="produto_id" min="10" max="10" value="10">
-                        <input required type="hidden" placeholder="quantidade"  name="quantidade" min="1" max="1" value="1">
+                        <input required type="hidden" placeholder="produto_id" name="produto_id" min="10" max="10"
+                            value="10">
+                        <input required type="hidden" placeholder="quantidade" name="quantidade" min="1" max="1"
+                            value="1">
                         <button type="submit" class="btn" name="submit">ADICIONAR AO CARRINHO</button>
                     </form>
                 </div>
@@ -384,8 +429,10 @@
                     <h3>CHLOÉ NATURELLE</h3>
                     <div class="price">R$580.00-<span>R$750.00</span></div>
                     <form action="" method="POST">
-                        <input required type="hidden" placeholder="produto_id"  name="produto_id" min="11" max="11" value="11">
-                        <input required type="hidden" placeholder="quantidade"  name="quantidade" min="1" max="1" value="1">
+                        <input required type="hidden" placeholder="produto_id" name="produto_id" min="11" max="11"
+                            value="11">
+                        <input required type="hidden" placeholder="quantidade" name="quantidade" min="1" max="1"
+                            value="1">
                         <button type="submit" class="btn" name="submit">ADICIONAR AO CARRINHO</button>
                     </form>
                 </div>
@@ -405,8 +452,10 @@
                     <h3>ERBA PURA EAU</h3>
                     <div class="price">R$2500.00-<span>R$2700.00</span></div>
                     <form action="" method="POST">
-                        <input required type="hidden" placeholder="produto_id"  name="produto_id" min="12" max="12" value="12">
-                        <input required type="hidden" placeholder="quantidade"  name="quantidade" min="1" max="1" value="1">
+                        <input required type="hidden" placeholder="produto_id" name="produto_id" min="12" max="12"
+                            value="12">
+                        <input required type="hidden" placeholder="quantidade" name="quantidade" min="1" max="1"
+                            value="1">
                         <button type="submit" class="btn" name="submit">ADICIONAR AO CARRINHO</button>
                     </form>
                 </div>
@@ -433,19 +482,25 @@
         <div class="box">
             <img decoding="async" src="src/public/img/icon-1.png" alt="">
             <h3>Entrega grátis</h3>
-            <p>Aproveite nossa entrega grátis para todas as suas compras, sem custo adicional! Escolha seus produtos favoritos e receba-os diretamente na sua porta, sem pagar taxas de envio. Compre agora e aproveite essa vantagem exclusiva!</p>
+            <p>Aproveite nossa entrega grátis para todas as suas compras, sem custo adicional! Escolha seus produtos
+                favoritos e receba-os diretamente na sua porta, sem pagar taxas de envio. Compre agora e aproveite essa
+                vantagem exclusiva!</p>
         </div>
 
         <div class="box">
             <img decoding="async" src="src/public/img/icon-2.png" alt="">
             <h3>Pagamento seguro</h3>
-            <p>Garantimos um atendimento seguro, protegendo suas informações pessoais e financeiras com rigorosos protocolos de segurança e tecnologias avançadas, treinados para tratar seus dados de forma confidencial. Compre com tranquilidade e confiança!</p>
+            <p>Garantimos um atendimento seguro, protegendo suas informações pessoais e financeiras com rigorosos
+                protocolos de segurança e tecnologias avançadas, treinados para tratar seus dados de forma confidencial.
+                Compre com tranquilidade e confiança!</p>
         </div>
 
         <div class="box">
             <img decoding="async" src="src/public/img/icon-3.png" alt="">
             <h3>Suporte 24 horas</h3>
-            <p>Estamos disponíveis para você 24 horas por dia, 7 dias por semana! Nossa equipe de suporte está sempre pronta para ajudar, seja por telefone, chat online, e-mail ou redes sociais. Conte conosco a qualquer momento para uma experiência de compra impecável!</p>
+            <p>Estamos disponíveis para você 24 horas por dia, 7 dias por semana! Nossa equipe de suporte está sempre
+                pronta para ajudar, seja por telefone, chat online, e-mail ou redes sociais. Conte conosco a qualquer
+                momento para uma experiência de compra impecável!</p>
         </div>
 
     </section>
@@ -478,6 +533,7 @@
 <script src="src/script/menumobile.js"></script>
 <script src="src/script/carrinho.js"></script>
 <script src="src/script/login.js"></script>
+<script src="src/script/confirmEmail.js"></script>
 <script src="src/script/cookies.js"></script>
 
 <?php include_once('src/php/AddCart.php'); ?>
@@ -485,28 +541,27 @@
 </html>
 
 <script>
-// Recebe os produtos no formato JSON e lista os produtos no carrinho //
+    // Recebe os produtos no formato JSON e lista os produtos no carrinho //
 
-function carregarCarrinho()
-{
-    fetch(window.location.href, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams({
-            action: 'carregar_carrinho'
+    function carregarCarrinho() {
+        fetch(window.location.href, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: new URLSearchParams({
+                action: 'carregar_carrinho'
+            })
         })
-    })
-    .then(response => response.json())
-    .then(data => {
+            .then(response => response.json())
+            .then(data => {
 
-        let cartContent = document.getElementById('cart-content');
-        cartContent.innerHTML = '';
+                let cartContent = document.getElementById('cart-content');
+                cartContent.innerHTML = '';
 
-        let total = 0;
-        data.items.forEach(item => {
-            cartContent.innerHTML += `
+                let total = 0;
+                data.items.forEach(item => {
+                    cartContent.innerHTML += `
                 <div class="cart-box">
                     <img class="cart-img" src="${item.caminho_imagem}" alt="">
                     <div class="detail-box">
@@ -526,93 +581,93 @@ function carregarCarrinho()
                 </div>
 
             `;
-            // Atualiza o total //
-            total += parseFloat(item.preco) * item.quantidade;
-        });
+                    // Atualiza o total //
+                    total += parseFloat(item.preco) * item.quantidade;
+                });
 
-        // Atualiza o valor total //
-        document.getElementById('total-price').textContent =
-        `R$${total.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).replace('.','').replace(',', '.')}`;
-    })
-    .catch(error => console.error('Erro ao carregar o carrinho:', error));
-}
-
-// Atualizar a quantidade de um produto no carrinho //
-
-function atualizarQuantidade(id, quantidade) {
-    fetch(window.location.href, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams({
-            action: 'atualizar_quantidade',
-            id_produto: id,
-            quantidade: quantidade
-        })
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            carregarCarrinho();
-        } else {
-            alert('Erro ao atualizar a quantidade.');
-        }
-    })
-    .catch(error => console.error('Erro ao atualizar a quantidade:', error));
-}
-
-// Evento para verificar a ação de mudança na quantidade //
-
-document.addEventListener('click', (event) => {
-    if (event.target && event.target.classList.contains('update-quantity')) {
-        const id = event.target.getAttribute('data-id');
-        const quantidade = document.querySelector(`input[data-id="${id}"]`).value;
-
-        if (quantidade >= 1) {
-            atualizarQuantidade(id, quantidade);
-        } else {
-            alert('A quantidade deve ser maior ou igual a 1.');
-        }
+                // Atualiza o valor total //
+                document.getElementById('total-price').textContent =
+                    `R$${total.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).replace('.', '').replace(',', '.')}`;
+            })
+            .catch(error => console.error('Erro ao carregar o carrinho:', error));
     }
-});
 
-// Função para remover um produto do carrinho //
+    // Atualizar a quantidade de um produto no carrinho //
 
-function removerProduto(id_produto) {
-    fetch(window.location.href, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams({
-            action: 'remover_produto',
-            id_produto: id_produto
+    function atualizarQuantidade(id, quantidade) {
+        fetch(window.location.href, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: new URLSearchParams({
+                action: 'atualizar_quantidade',
+                id_produto: id,
+                quantidade: quantidade
+            })
         })
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            alert('Produto removido com sucesso!');
-            carregarCarrinho();
-        } else {
-            alert('Erro ao remover o produto.');
-        }
-    })
-    .catch(error => console.error('Erro ao remover o produto:', error));
-}
-
-// Evento para verificar a ação de remoção do produto //
-
-document.addEventListener('click', (event) => {
-    if (event.target && event.target.classList.contains('cart-remove')) {
-        const id = event.target.closest('.buttons').querySelector('input.cart-quant').getAttribute('data-id');
-
-        if (confirm("Você tem certeza que deseja remover este produto do carrinho?")) {
-            removerProduto(id);
-        }
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    carregarCarrinho();
+                } else {
+                    alert('Erro ao atualizar a quantidade.');
+                }
+            })
+            .catch(error => console.error('Erro ao atualizar a quantidade:', error));
     }
-});
 
-window.onload = carregarCarrinho;
+    // Evento para verificar a ação de mudança na quantidade //
+
+    document.addEventListener('click', (event) => {
+        if (event.target && event.target.classList.contains('update-quantity')) {
+            const id = event.target.getAttribute('data-id');
+            const quantidade = document.querySelector(`input[data-id="${id}"]`).value;
+
+            if (quantidade >= 1) {
+                atualizarQuantidade(id, quantidade);
+            } else {
+                alert('A quantidade deve ser maior ou igual a 1.');
+            }
+        }
+    });
+
+    // Função para remover um produto do carrinho //
+
+    function removerProduto(id_produto) {
+        fetch(window.location.href, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: new URLSearchParams({
+                action: 'remover_produto',
+                id_produto: id_produto
+            })
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Produto removido com sucesso!');
+                    carregarCarrinho();
+                } else {
+                    alert('Erro ao remover o produto.');
+                }
+            })
+            .catch(error => console.error('Erro ao remover o produto:', error));
+    }
+
+    // Evento para verificar a ação de remoção do produto //
+
+    document.addEventListener('click', (event) => {
+        if (event.target && event.target.classList.contains('cart-remove')) {
+            const id = event.target.closest('.buttons').querySelector('input.cart-quant').getAttribute('data-id');
+
+            if (confirm("Você tem certeza que deseja remover este produto do carrinho?")) {
+                removerProduto(id);
+            }
+        }
+    });
+
+    window.onload = carregarCarrinho;
 </script>

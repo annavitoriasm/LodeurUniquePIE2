@@ -452,6 +452,85 @@ dialog{
     border-color: #4cce68;
     border-width: 2px;
 }
+/* CONFIRMAÇÃO DE EMAIL - POPUP */
+.panel-confirm{
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999999999999999999999;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    background-color: #22222221;
+    backdrop-filter: blur(15px);
+}
+
+.pCClose{
+    display: none;
+}
+
+.pCOpen{
+    display: flex;
+}
+
+.container-confirm{
+    width: 450px;
+    height: 230px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 8px 1px #a1a1a1ab;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.fa-paper-plane{
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+.txt-confirm{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.txt2-confirm{
+    font-size: 15px;
+    color: #111111f5;
+}
+.btn-cls-confirm{
+    position: absolute;
+    right: 35.5%;
+    top: 37%;
+    background-color: #66666600;
+    width: 5px;
+    height: 5px;
+    cursor: pointer;
+    margin-top: -20px;
+    transform: 0.5s;
+}
+.btn-confirm{
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 16px;
+    border-radius: 6px;
+    line-height: 4px;
+    color: #ffffff;
+    background-color: #222;
+    margin-top: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-confirm:hover{
+    background-color: #000;
+    transform: 0.5s;
+}
 
 /* 'COOKIES' */
 #cookieBanner {
