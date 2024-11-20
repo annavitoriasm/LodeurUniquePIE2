@@ -51,9 +51,6 @@ try {
                 max-width: 600px;
                 margin: 0 auto;
               }
-              .txt {
-                text-align: justify;
-              }
               .button:hover {
                   background-color: #000;
               }
@@ -62,7 +59,7 @@ try {
         <body class='container'>
             <img src='https://i.imgur.com/9Akpe7W.png' alt='logo' width='200'>
             <p><br>Olá!</p>
-            <p class='txt'>Obrigado por se cadastrar no LodeurUnique! Por favor, clique no botão abaixo para finalizar o seu cadastro no site.</p>
+            <p>Obrigado por se cadastrar no LodeurUnique! <br> Por favor, clique no botão abaixo para finalizar o seu cadastro no site.</p>
             <a href='http://localhost:6969/src/pages/valid.php' class='button'>Confirmar email</a>
             <p><br>Atenciosamente,<br>
             Equipe LodeurUnique</p>
