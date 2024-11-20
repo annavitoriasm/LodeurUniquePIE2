@@ -37,7 +37,7 @@ try {
                 font-size: 16px;
                 font-weight: bold;
                 color: #ffffff !important;
-                background-color: #1a73e8;
+                background-color: #222;
                 border-radius: 8px;
                 transition: background-color 0.3s ease;
                 text-decoration: none;
@@ -52,7 +52,7 @@ try {
               margin: 0 auto;
               }
               .button:hover {
-                  background-color: #1558b0;
+                  background-color: #000;
               }
         </style>
         </head>
