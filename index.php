@@ -1,4 +1,4 @@
-<?php include_once('src/php/UpdateCart.php'); ?>
+<?php include_once('src/php/UpdateCartIndex.php'); ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -71,7 +71,7 @@
             <form id="form-login" method="POST">
                 <input required type="email" placeholder="Email" class="box inp-login" name="email">
                 <input required type="password" placeholder="Senha" class="box inp-login" name="senha">
-                <button onclick="confirmEmail()" class=" btn-login">Entrar</button>
+                <button onclick="confirmEmail()" class="btn btn-login">Entrar</button>
             </form>
         </div>
 
@@ -536,7 +536,7 @@
 <script src="src/script/confirmEmail.js"></script>
 <script src="src/script/cookies.js"></script>
 
-<?php include_once('src/php/AddCart.php'); ?>
+<?php include_once('src/php/AddCartIndex.php'); ?>
 
 </html>
 

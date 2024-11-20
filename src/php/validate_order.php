@@ -1,5 +1,5 @@
 <?php
-require_once('sqlconfig.php');
+require_once('../pages/sqlconfig.php');
 
 # Captura e sanitização inicial dos dados enviados via POST
 $Data = array_map('trim', $_POST);
@@ -8,7 +8,12 @@ $Data = array_map('trim', $_POST);
 $Data['cpf'] = isset($Data['cpf']) ? preg_replace('/\D/', '', $Data['cpf']) : '';
 $Data['cep'] = isset($Data['cep']) ? preg_replace('/\D/', '', $Data['cep']) : '';
 $Data['numeroend'] = isset($Data['numeroend']) ? (int)$Data['numeroend'] : 0;
-$Data['data_nasc'] = isset($Data['data_nasc']) ? date("Y-m-d", strtotime(str_replace('/', '-', $Data['data_nasc']))) : '';
+
+if (isset($Data['data_nasc']) && !empty($Data['data_nasc'])) {
+    $Data['data_nasc'] = date("Y-m-d", strtotime(str_replace('/', '-', $Data['data_nasc'])));
+} else {
+    $Data['data_nasc'] = '1970-01-01';
+}
 
 # Sanitização adicional para evitar XSS
 $Data = array_map(function($value) {

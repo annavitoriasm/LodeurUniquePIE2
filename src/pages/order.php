@@ -389,4 +389,6 @@
 
 </body>
 
+<?php require_once('../php/validate_order.php') ?>
+
 </html>
