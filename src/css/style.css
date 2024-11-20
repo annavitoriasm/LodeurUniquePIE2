@@ -366,12 +366,13 @@ dialog{
 .h3-login{
     font-size: 30px;
     width: 150px;
+    margin-top: 15px;
 }
 
 .desc-login{
     font-size: 14px;
     color: #222;
-    margin-top: 3.5px;
+    margin-top: 8px;
 }
 
 .text-login{

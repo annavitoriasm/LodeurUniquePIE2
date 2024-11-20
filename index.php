@@ -69,7 +69,8 @@
             <form id="form-login" action="./src/pages/validate_email.php" method="POST">
                 <input required type="email" placeholder="Email" class="box inp-login" name="email">
                 <input required type="password" placeholder="Senha" class="box inp-login" name="senha">
-                <button type="submit" onclick="onLoginButtonClick()" class=" btn-login">Entrar</button>
+                <button type="submit" onclick="closeModal()" class=" btn-login">Entrar</button>
+                <!-- onclick="onLoginButtonClick()" -->
             </form>
         </div>
 
